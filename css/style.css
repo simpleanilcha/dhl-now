@@ -1,0 +1,255 @@
+
+body{
+    font-family: 'Raleway', sans-serif !important;
+}
+
+header{
+    background-color: #fc0;
+    padding: 2px 0px 2px;
+}
+
+.main-nav{
+    border-bottom: 8px solid #c00;
+}
+.nav > li > a{
+    padding:5px 14px;
+}
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    height: auto !important;
+    line-height: 20px;
+    padding:6px 15px;
+}
+ .navbar{
+    min-height:0px;
+    border: none;
+    margin-bottom: 0px;
+} 
+/*.navbar-collapse.collapse {
+	margin-top: 22px;	
+}*/
+.navbar-default {
+    background-color: #fc0;
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #c00;
+    color: #fc0;
+    border-radius: 4px 4px 0 0;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: #c00;
+    color: #fc0;
+    border-radius: 4px 4px 0 0;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+    font-weight: bold;
+}
+.dropdown-menu > li > a {
+	padding: 6px 20px;
+}
+
+/* User login */
+.user-login{
+	margin: 10px 50px 0 0;
+}
+.user-login a:hover{
+    margin: 10px 50px 0 0;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.user-login a{
+	color:#000;
+}
+.user-login span{
+    margin-left: 5px;
+}
+.user-login img{
+	border: 1px solid #999;
+}
+.user-name{
+	font-weight: bold;
+}
+.user-email{
+	margin-left: 26px;
+	font-size: 12px;
+}
+
+
+/* Main container*/
+/*.main-container{
+    padding: 0px 30px;
+}*/
+
+/*.dhl-tabs{  
+    margin-bottom: 20px;
+}*/
+.dhl-tabs .tab-content{
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+}
+.dhl-tabs li a{
+    color: #000;
+}
+.dhl-tabs li a:hover{
+    background-color: #c00 !important;
+    color: #fc0 !important;
+}
+.dhl-tabs .nav-tabs>li.active>a, .dhl-tabs .nav-tabs>li.active>a:focus, .dhl-tabs .nav-tabs>li.active>a:hover {
+    background-color: #c00 !important;
+    color: #fc0 !important;
+}
+.dhl-tabs .nav-tabs{
+    border-bottom:1px solid #c00;
+}
+.form-group {
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.form-group label span{
+    color:#c00;
+}
+.form-control{
+    height: 30px;
+    padding: 2px 12px;
+}
+.form-control:focus {
+    border-color: #fc0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(243,142,34,0.6);
+    outline: 0 none;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0 5px 0;
+    border-bottom: 1px solid #fc0;
+    padding-bottom: 10px;
+}
+h2, .table-header{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px 0 10px 0;
+    border-bottom: 1px solid #fc0;
+    padding:10px;
+    background-color: #fc0;
+}
+table .table-hover>tr .table-header:hover{
+    background-color: #fc0 !important;
+}
+/*.dhl-form input, select, select .dhl-option{
+    text-align: center !important;
+}
+select{
+    text-align: center;
+}
+select .dhl-option{
+    text-align: center !important;
+    horizontal-align:middle;
+    position: absolute;
+}*/
+.btn-create{
+    background-color: #fc0;
+    color: #000;
+    border:none;
+    margin-top: 5px;
+    border-radius: 0px;
+}
+.btn-create:hover{
+    background-color: #c00;
+    color: #fc0;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.form-left{
+    padding-right: 15px;
+}
+
+.form-right{
+    padding-left: 30px;
+}
+
+.dhl-row{
+    margin-bottom: 20px;
+}
+
+/* Footer css*/
+
+footer{
+    margin-top: 50px;
+    padding: 30px;
+    color: #000;
+    border-top: 6px solid #eee;
+}
+
+
+.main-header{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.border-div{
+    border: 1px solid #ccc;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.border-div:hover{
+    background-color: #f6f6f6;
+}
+.border-div input, .border-div select {
+  border: none;
+  box-shadow: 0px 0px 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
+}
+.right-col-div{
+    margin-left: 0px;
+}
+.both-col-div{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.dhl-tabs .nav > li > a{
+    padding:5px 10px;
+    border-radius: 0px;
+    border-bottom-color: #c00;
+}
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 3px 3px 0px #999;
+}
+.main-nav{
+    z-index: 9999;
+    background-color: #fc0;
+    padding-top: 6px;
+    
+}
+
+.go-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: #000;
+    background-color: #fc0;
+    font-size: 12px;
+    padding: 10px;
+    display: none;
+}
+
+.go-top:hover {
+    background-color: #c00;
+    color: #fc0;
+    transition: background-color 0.5s ease;
+}
+
+.below-container{
+    margin-bottom:30px;
+}

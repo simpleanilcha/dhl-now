@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
+    <title>DHL</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-sm-2 col-xs-6 ">
+                    <a href="index.html">
+                        <img src="images/dhl_logo.gif" alt="DHL" title="DHL" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-lg-offset-8 col-lg-2 col-sm-offset-7 col-sm-3 col-xs-6">
+                    <div class="user-login">
+                        <a href="#" class="user-name"><img src="images/user-icon.png" alt="user" title="user" width="20" height="20" class="img-circle"><span>Steva<span class="fa fa-angle-down"></span></span> </a>
+                        <!-- <br>
+                        <a href="mailto:test@example.com" class="user-email">test@example.com</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Nav starts -->
+    <nav class="navbar navbar-default main-nav" role="navigation">
+        <div class="container-fluid main-nav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Branch <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Organization</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Company 1</a></li>
+                            <li><a href="#">Company 2</a></li>
+                            <li><a href="#">Company 3</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Change Company</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Users 1</a></li>
+                            <li><a href="#">Users 2</a></li>
+                            <li><a href="#">Users 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Tools 1</a></li>
+                            <li><a href="#">Tools 2</a></li>
+                            <li><a href="#">Tools 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Products 1</a></li>
+                            <li><a href="#">Products 2</a></li>
+                            <li><a href="#">Products 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Matrix <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Matrix 1</a></li>
+                            <li><a href="#">Matrix 2</a></li>
+                            <li><a href="#">Matrix 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fee <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Fee 1</a></li>
+                            <li><a href="#">Fee 2</a></li>
+                            <li><a href="#">Fee 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Invoice Control 1</a></li>
+                            <li><a href="#">Invoice Control 2</a></li>
+                            <li><a href="#">Invoice Control 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Address Book <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Address Book 1</a></li>
+                            <li><a href="#">Address Book 2</a></li>
+                            <li><a href="#">Address Book 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Create Shipment <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Create Shipment 1</a></li>
+                            <li><a href="#">Create Shipment 2</a></li>
+                            <li><a href="#">Create Shipment 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">History</a></li>
+                    <!-- <li><a href="#">Change Company</a></li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<!-- test -->
+ <div class="container main-container">
+
+
+
+ <div class="row ">
+
+        <div class="col-lg-4 main-header" >
+        <h1>Create Shipment</h1>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-lg-4">
+        <!-- User Account -->
+        <div class="row border-div">
+        <h2>User Account</h2>
+        <div class="form-group">
+                                <label for="inputCustomsValue" class="control-label col-lg-6 ">Account <span>*</span></label>
+                                <div class="col-lg-6">
+                                    <select class="form-control">
+                                        <option>Account 1</option>
+                                        <option selected>Account 2</option>
+                                        <option>Account 3</option>
+                                        <option>Account 4</option>
+                                    </select>
+                                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputImport" class="control-label col-lg-6 ">Import</label>
+                <div class="col-lg-6">
+                            <input type="checkbox" class="checkbox" id="inputImport">
+                </div>
+        </div>
+    </div>
+    <!-- User Account ends here -->
+
+<!-- tabs  -->
+<div class="row">
+                
+                <div class="col-lg-12 both-col-div dhl-tabs border-div">
+                <!-- <h2>Heading here</h2> -->
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                       
+                        <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Receiver Address</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Sender address</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Pickup address</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      
+                        <!-- Receiver Address tab -->
+                        <div role="tabpanel" class="tab-pane active" id="profile">
+
+                        <form action="" class="form-horizontal">
+                        <div class="row">
+
+                        <!-- Column 1 -->
+                            <div class="col-lg-12">
+                            
+                            
+                                <div class="form-group">
+                                    <label class="col-lg-6" for="exampleAddressBook">Address Book</label>
+                                    <div class="col-lg-6">
+                                        <select class="form-control">
+                                            <option>Address Book 1</option>
+                                            <option selected>Address Book 2</option>
+                                            <option>Address Book 3</option>
+                                            <option>Address Book 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                <label for="inputSearch" class="col-lg-6 ">Search Text</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputSearch" placeholder="Search">
+                                </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-6" for="exampleAccount">Search options</label>
+                                    <div class="col-lg-6">
+                                        <select class="form-control">
+                                            <option>Search options 1</option>
+                                            <option selected>Search options 2</option>
+                                            <option>Search options 3</option>
+                                            <option>Search options 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                <div class="col-lg-offset-6 col-lg-6">
+                                    <button type="submit" class="btn btn-default btn-create">Filter</button>
+                                </div>
+                            </div>
+                            
+                          
+                            </div>
+
+                            <!-- Column 2 -->
+                            <div class="col-lg-12">
+                            
+                            
+                            <div class="form-group">
+                                <label for="inputCompanyName" class="col-lg-6 ">Company name <span>*</span></label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputCompanyName" placeholder="Company name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddressOne" class="col-lg-6 ">Address line 1 <span>*</span></label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputAddressOne" placeholder="Address line 1" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddressTwo" class="col-lg-6 ">Address line 2</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputAddressTwo" placeholder="Address line 2">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddressThree" class="col-lg-6 ">Address line 3</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputAddressThree" placeholder="Address line 3">
+                                </div>
+                            </div> 
+                            <div class="form-group">
+                                <label for="inputPostalCode" class="col-lg-6 ">Postal Code</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputPostalCode" placeholder="Postal Code">
+                                </div>
+                            </div>
+                            
+                           
+                            </div>
+
+                    <!-- Third column -->
+                    <div class="col-lg-12">
+                        <form action="" class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputCity" class="col-lg-6 ">City <span>*</span></label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputCity" placeholder="City" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-lg-6" for="exampleCountryName">Country <span>*</span></label>
+                                <div class="col-lg-6">
+                                    <!--  <select  class="selectpicker show-tick form-control"> -->
+                                    <select class="form-control">
+                                        <option>Country 1</option>
+                                        <option selected>Country 2</option>
+                                        <option>Country 3</option>
+                                        <option>Country 4</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPhone" class="col-lg-6 ">Phone</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmailOne" class="col-lg-6 ">Email 1 <span>*</span></label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputEmailOne" placeholder="Email 1" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmailTwo" class="col-lg-6 ">Email 2</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="inputEmailTwo" placeholder="Email 2">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-offset-6 col-lg-6">
+                                    <button type="reset" class="btn btn-default btn-create">Clear</button>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            </form>
+                            
+                            </div>
+
+
+
+                        </div>
+                        <!-- Sender address tab -->
+                        <div role="tabpanel" class="tab-pane" id="messages">Sender address tab details</div>
+                        <!-- Pickup address tab -->
+                        <div role="tabpanel" class="tab-pane" id="settings">Pickup address tab details</div>
+                    </div>
+                </div>
+
+            </div>
+<!-- tabs end here -->
+
+        </div>
+
+
+<!-- Right column -->
+        <div class="col-lg-8">
+
+        <!-- Shipment options starts -->
+        <div class="row right-col-div border-div ">
+        <h2>Shipment options</h2>
+
+        <div class="col-lg-12">
+
+        <div class="row">
+            <div class="form-group">
+            <label for="inputDocument" class="control-label col-lg-3 ">Ship date <span>*</span></label>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="MM-DD-YYYY" required>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="form-group">
+                                <label for="inputDocument" class="control-label col-lg-3 ">Document</label>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="inputDocument">
+                                </div>
+        </div>
+        </div>
+
+    <div class="row ">
+    <div class="form-group ">
+            <label for="inputDocument" class="control-label col-lg-3 ">Customs value <span>*</span></label>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="0.00" required>
+            </div>
+
+            <label for="inputCustomsValue" class="control-label col-lg-3 ">Valuta <span>*</span></label>
+                                <div class="col-lg-3">
+                                    <select class="form-control">
+                                        <option>Euro 1</option>
+                                        <option selected>Euro 2</option>
+                                        <option>Euro 3</option>
+                                        <option>Euro 4</option>
+                                    </select>
+                                </div>
+    </div>
+    </div>
+
+
+    <div class="row ">
+    <div class="form-group ">
+            <label for="inputDocument" class="control-label col-lg-3 ">Insurance value</label>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="0.00" required>
+            </div>
+
+            <label for="inputCustomsValue" class="control-label col-lg-3 ">Valuta</label>
+                                <div class="col-lg-3">
+                                    <select class="form-control">
+                                        <option>Euro 1</option>
+                                        <option selected>Euro 2</option>
+                                        <option>Euro 3</option>
+                                        <option>Euro 4</option>
+                                    </select>
+                                </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+                                <label for="inputDocument" class="control-label col-lg-3 ">Receiver pays</label>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="inputDocument">
+                                </div>
+                </div>
+
+            </div>
+    
+
+    <div class="row ">
+    <div class="form-group ">
+            <label for="inputDocument" class="control-label col-lg-3 ">Export reason</label>
+            <div class="col-lg-3">
+                                    <select class="form-control">
+                                        <option>Reason 1</option>
+                                        <option selected>Reason 2</option>
+                                        <option>Reason 3</option>
+                                        <option>Reason 4</option>
+                                    </select>
+                                </div>
+
+            <label for="inputCustomsValue" class="control-label col-lg-3 ">Incoterms 2010</label>
+                                <div class="col-lg-3">
+                                    <select class="form-control">
+                                        <option>Incoterms 1</option>
+                                        <option selected>Incoterms 2</option>
+                                        <option>Incoterms 3</option>
+                                        <option>Incoterms 4</option>
+                                    </select>
+                                </div>
+    </div>
+    </div>
+
+
+        </div>
+       
+
+        </div>
+
+<!-- Packages information starts here -->
+
+<div class="row right-col-div border-div ">
+        <h2>Packages information</h2>
+<div class="col-lg-12">
+        
+        <div class="row">
+        <div class="form-group">
+                                <label for="inputDocument" class="control-label col-lg-3 ">Dangerous goods</label>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="inputDocument">
+                                </div>
+        </div>
+        </div>
+
+    <div class="row ">
+    <div class="form-group ">
+            
+
+            <label for="inputCustomsValue" class="control-label col-lg-3 ">Number of packages <span>*</span></label>
+                                <div class="col-lg-3">
+                                    <select class="form-control">
+                                        <option>Packages 1</option>
+                                        <option>Packages 2</option>
+                                        <option>Packages 3</option>
+                                        <option>Packages 4</option>
+                                        <option selected>Packages 5</option>
+                                    </select>
+                                </div>
+
+            <label for="inputDocument" class="control-label col-lg-3 ">Packages dimensions</label>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="inputDocument">
+                                </div>
+    </div>
+    </div>
+
+<br>
+
+    <div class="row ">
+    <div class="form-group ">
+            
+
+            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Width<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Height<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
+            <div class="col-lg-2">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
+            </div>
+
+    </div>
+    </div>
+
+    <div class="row ">
+    <div class="form-group ">
+            
+
+            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Width<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Height<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
+            <div class="col-lg-2">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
+            </div>
+
+    </div>
+    </div>
+
+    <div class="row ">
+    <div class="form-group ">
+            
+
+            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Width<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Height<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
+            <div class="col-lg-2">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
+            </div>
+
+    </div>
+    </div>
+
+    <div class="row ">
+    <div class="form-group ">
+            
+
+            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Width<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Height<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
+            <div class="col-lg-2">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
+            </div>
+
+    </div>
+    </div>
+
+    <div class="row ">
+    <div class="form-group ">
+            
+
+            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Width<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-1 ">Height<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
+            <div class="col-lg-2">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
+            </div>
+
+    </div>
+    </div>
+
+<br>
+    
+    <div class="row ">
+    <div class="form-group ">
+            
+
+            <label for="inputDocument" class="control-label col-lg-3 ">Total weight<span>*</span></label>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="0.00" required>
+            </div>
+
+            <label for="inputDocument" class="control-label col-lg-3 ">Total Dry ice weight</label>
+                                <div class="col-lg-3">
+                                    <input type="text" class="form-control" id="inputAccountNo" placeholder="0.00">
+                                </div>
+    </div>
+    </div>
+
+
+    <div class="row ">
+    <div class="form-group ">
+            
+
+            <label for="inputDocument" class="control-label col-lg-3 ">Senders reference</label>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="reference">
+            </div>
+
+            <label for="inputDocument" class="control-label col-lg-3 ">Receivers reference</label>
+                                <div class="col-lg-3">
+                                    <input type="text" class="form-control" id="inputAccountNo" placeholder="reference">
+                                </div>
+    </div>
+    </div>
+
+    <div class="row ">
+    <div class="form-group ">
+            
+
+            <label for="inputDocument" class="control-label col-lg-3 ">Description</label>
+            <div class="col-lg-3">
+                                    <select class="form-control">
+                                        <option>Description 1</option>
+                                        <option selected>Description 2</option>
+                                        <option>Description 3</option>
+                                        <option>Description 4</option>
+                                    </select>
+                                </div>
+
+            <label for="inputDocument" class="control-label col-lg-3 ">Description<span>*</span></label>
+                                <div class="col-lg-3">
+                                    <input type="text" class="form-control" id="inputAccountNo" placeholder="placeholder" required>
+                                </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label for="inputDocument" class="control-label col-lg-3 ">Save description</label>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="inputDocument">
+                                </div>
+        </div>
+        </div>
+
+
+</div>
+</div>
+
+<!-- Packages information ends here -->
+
+        </div>
+
+
+
+
+
+        </div>
+        </div>
+
+
+<!-- Show shipping options / Create shipment starts here -->
+<div class="container below-container">
+<div class="row">
+        
+
+            <table class="table table-bordered table-hover text-center">
+<tr class="table-header">
+    <td>Product</td>
+    <td>Transport product</td>
+    <td>Billable weight</td>
+    <td>Price</td>
+    <td>Select</td>
+</tr>
+
+<tr>
+    <td>DHL Express for 1200</td>
+    <td>DHL Express</td>
+    <td>10,00</td>
+    <td>300,00</td>
+    <td><form><input type="checkbox"></form></td>
+</tr>
+
+<tr>
+    <td>DHL Express for 1200</td>
+    <td>DHL Express</td>
+    <td>10,00</td>
+    <td>300,00</td>
+    <td><form><input type="checkbox"></form></td>
+</tr>
+
+<tr>
+    <td>DHL Express for 1200</td>
+    <td>DHL Express</td>
+    <td>10,00</td>
+    <td>300,00</td>
+    <td><form><input type="checkbox"></form></td>
+</tr>
+
+<tr>
+    <td>DHL Express for 1200</td>
+    <td>DHL Express</td>
+    <td>10,00</td>
+    <td>300,00</td>
+    <td><form><input type="checkbox"></form></td>
+</tr>
+
+<tr>
+    <td>DHL Express for 1200</td>
+    <td>DHL Express</td>
+    <td>10,00</td>
+    <td>300,00</td>
+    <td><form><input type="checkbox"></form></td>
+</tr>
+                
+     </table>
+
+</div>
+
+<!-- Create shipment button -->
+<div class="row">
+<button type="submit" class="btn btn-default btn-create btn-lg">Create shipment</button>
+</div>
+</div>
+
+
+<!-- Show shipping options / Create shipment ends here -->
+
+<!-- ends test -->
+
+
+
+
+    <!-- Footer starts -->
+    <a href="#" class="go-top"><span class="fa fa-chevron-up fa-lg"></span></a>
+    <!-- <footer>
+<p class="text-center">2015 © DHL. All rights reserved.</p>
+</footer> -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap-select.min.js"></script> -->
+
+    <!-- Fixed navigation when scrolls -->
+<script>
+    var  mn = $(".main-nav");
+    mns = "main-nav-scrolled";
+    hdr = $('header').height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
+</script>
+
+<!-- Go to Top -->
+<script>
+        $(document).ready(function() {
+            // Show or hide the sticky footer button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 200) {
+                    $('.go-top').fadeIn(200);
+                } else {
+                    $('.go-top').fadeOut(200);
+                }
+            });
+            
+            // Animate the scroll to top
+            $('.go-top').click(function(event) {
+                event.preventDefault();
+                
+                $('html, body').animate({scrollTop: 0}, 300);
+            })
+        });
+    </script>
+
+</body>
+
+</html>
