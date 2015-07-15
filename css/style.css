@@ -201,7 +201,7 @@ footer{
 .border-div:hover{
     background-color: #f6f6f6;
 }
-.border-div input, .border-div select {
+.border-div input, .border-div select, .table-select {
   border: none;
   box-shadow: 0px 0px 0px;
   border-radius: 0px;
@@ -218,6 +218,13 @@ footer{
     padding:5px 10px;
     border-radius: 0px;
     border-bottom-color: #c00;
+}
+.dhl-tabs .nav-tabs>li.active>a, .dhl-tabs .nav-tabs>li.active>a:focus, 
+.dhl-tabs .nav-tabs>li.active>a:hover, .dhl-tabs .nav-tabs>li>a{
+    border:none;
+    /*border-top:none;
+    border-left:none;
+    border-right:none;*/
 }
 .main-nav-scrolled {
   position: fixed;
