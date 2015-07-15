@@ -147,8 +147,6 @@
 <!-- test -->
  <div class="container main-container">
 
-
-
  <div class="row ">
 
         <div class="col-lg-4 main-header" >
@@ -158,11 +156,29 @@
 
         <div class="row">
         <div class="col-lg-4">
-        <!-- User Account -->
-        <div class="row border-div">
-        <h2>User Account</h2>
-        <div class="form-group">
-                                <label for="inputCustomsValue" class="control-label col-lg-6 ">Account <span>*</span></label>
+        
+<!-- tabs  -->
+<div class="row">
+                
+                <div class="col-lg-12 both-col-div dhl-tabs border-div">
+                <h2>Shipment information</h2>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                       <li role="presentation" class="active"><a href="#userAccount" aria-controls="userAccoun" role="tab" data-toggle="tab">User Account</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Receiver</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Sender</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Pickup address</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                    <!-- User Account tab starts here -->
+                     <div role="tabpanel" class="tab-pane  active" id="userAccount">
+                     <form class="form-horizontal">
+                     <div class="row">
+                         <div class="col-lg-12">
+                    <div class="form-group">
+                                <label for="inputCustomsValue" class="col-lg-6 ">Account <span>*</span></label>
                                 <div class="col-lg-6">
                                     <select class="form-control">
                                         <option>Account 1</option>
@@ -174,31 +190,23 @@
         </div>
 
         <div class="form-group">
-            <label for="inputImport" class="control-label col-lg-6 ">Import</label>
+            <label for="inputImport" class="col-lg-6 ">Shipment Direction</label>
                 <div class="col-lg-6">
-                            <input type="checkbox" class="checkbox" id="inputImport">
+                            <select class="form-control">
+                                        <option selected>Eksport/Domestic</option>
+                                        <option>Import</option>
+                                    </select>
                 </div>
-        </div>
-    </div>
-    <!-- User Account ends here -->
+        </div>         
+                         </div>
+                     </div>
+                     </form>
+                     </div>   
+                    <!-- User Account tab ends here -->
 
-<!-- tabs  -->
-<div class="row">
-                
-                <div class="col-lg-12 both-col-div dhl-tabs border-div">
-                <!-- <h2>Heading here</h2> -->
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                       
-                        <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Receiver Address</a></li>
-                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Sender address</a></li>
-                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Pickup address</a></li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                      
+
                         <!-- Receiver Address tab -->
-                        <div role="tabpanel" class="tab-pane active" id="profile">
+                        <div role="tabpanel" class="tab-pane" id="profile">
 
                         <form action="" class="form-horizontal">
                         <div class="row">
@@ -374,14 +382,28 @@
 
         <div class="row">
         <div class="form-group">
-                                <label for="inputDocument" class="control-label col-lg-3 ">Document</label>
-                                <div class="col-lg-3">
+                                <label for="inputDocument" class="control-label col-lg-3 ">No Customs</label>
+                                <div class="col-lg-1">
                                     <input type="checkbox" id="inputDocument">
+                                </div>
+                                 <label for="inputDocument" class="control-label col-lg-2 ">Custom value<span>*</span></label>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="0.00" required>
+            </div>
+
+            
+                                <div class="col-lg-3">
+                                    <select class="form-control">
+                                        <option>Euro 1</option>
+                                        <option selected>Euro 2</option>
+                                        <option>Euro 3</option>
+                                        <option>Euro 4</option>
+                                    </select>
                                 </div>
         </div>
         </div>
 
-    <div class="row ">
+    <!-- <div class="row ">
     <div class="form-group ">
             <label for="inputDocument" class="control-label col-lg-3 ">Customs value <span>*</span></label>
             <div class="col-lg-3">
@@ -398,7 +420,7 @@
                                     </select>
                                 </div>
     </div>
-    </div>
+    </div> -->
 
 
     <div class="row ">
@@ -408,7 +430,7 @@
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="0.00" required>
             </div>
 
-            <label for="inputCustomsValue" class="control-label col-lg-3 ">Valuta</label>
+            <!-- <label for="inputCustomsValue" class="control-label col-lg-3 ">Valuta</label> -->
                                 <div class="col-lg-3">
                                     <select class="form-control">
                                         <option>Euro 1</option>
@@ -420,16 +442,6 @@
     </div>
     </div>
 
-    <div class="row">
-        <div class="form-group">
-                                <label for="inputDocument" class="control-label col-lg-3 ">Receiver pays</label>
-                                <div class="col-lg-3">
-                                    <input type="checkbox" id="inputDocument">
-                                </div>
-                </div>
-
-            </div>
-    
 
     <div class="row ">
     <div class="form-group ">
@@ -443,7 +455,7 @@
                                     </select>
                                 </div>
 
-            <label for="inputCustomsValue" class="control-label col-lg-3 ">Incoterms 2010</label>
+            <label for="inputCustomsValue" class="control-label col-lg-3 ">Incoterms</label>
                                 <div class="col-lg-3">
                                     <select class="form-control">
                                         <option>Incoterms 1</option>
@@ -456,43 +468,73 @@
     </div>
 
 
-        </div>
+    <div class="row">
+        <div class="form-group">
+                                <label for="inputDocument" class="control-label col-lg-3 ">Receiver pays</label>
+                                <div class="col-lg-1">
+                                    <input type="checkbox" id="inputDocument">
+                                </div>
+                                <label for="inputDocument" class="control-label col-lg-2 ">Account no.<span>*</span></label>
+            <div class="col-lg-2">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="0000" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-2 ">Carrier<span>*</span></label>
+            
+                                <div class="col-lg-2">
+                                    <select class="form-control">
+                                        <option>Carrier 1</option>
+                                        <option selected>Carrier 2</option>
+                                        <option>Carrier 3</option>
+                                        <option>Carrier 4</option>
+                                    </select>
+                                </div>
+                </div>
+
+            </div>
+    
+
+
+
+
+       <!--  </div>
        
-
         </div>
-
-<!-- Packages information starts here -->
 
 <div class="row right-col-div border-div ">
         <h2>Packages information</h2>
-<div class="col-lg-12">
+<div class="col-lg-12"> -->
         
-        <div class="row">
+<!--         <div class="row">
         <div class="form-group">
                                 <label for="inputDocument" class="control-label col-lg-3 ">Dangerous goods</label>
                                 <div class="col-lg-3">
                                     <input type="checkbox" id="inputDocument">
                                 </div>
         </div>
-        </div>
+        </div> -->
 
     <div class="row ">
     <div class="form-group ">
             
 
             <label for="inputCustomsValue" class="control-label col-lg-3 ">Number of packages <span>*</span></label>
-                                <div class="col-lg-3">
-                                    <select class="form-control">
+                    <div class="col-lg-2">
+                    <input type="text" class="form-control" id="inputAccountNo" placeholder="99" required>
+                                    <!-- <select class="form-control">
                                         <option>Packages 1</option>
                                         <option>Packages 2</option>
                                         <option>Packages 3</option>
                                         <option>Packages 4</option>
                                         <option selected>Packages 5</option>
-                                    </select>
+                                    </select> -->
                                 </div>
 
             <label for="inputDocument" class="control-label col-lg-3 ">Packages dimensions</label>
-                                <div class="col-lg-3">
+                                <div class="col-lg-1">
+                                    <input type="checkbox" id="inputDocument">
+                                </div>
+            <label for="inputDocument" class="control-label col-lg-2 ">Danger goods</label>
+                                <div class="col-lg-1">
                                     <input type="checkbox" id="inputDocument">
                                 </div>
     </div>
@@ -504,10 +546,7 @@
     <div class="form-group ">
             
 
-            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-            </div>
+            
             <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
             <div class="col-lg-1">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
@@ -520,7 +559,11 @@
             <div class="col-lg-1">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
             </div>
-            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
+            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice<span>*</span></label>
             <div class="col-lg-2">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
             </div>
@@ -532,10 +575,7 @@
     <div class="form-group ">
             
 
-            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-            </div>
+            
             <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
             <div class="col-lg-1">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
@@ -548,7 +588,11 @@
             <div class="col-lg-1">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
             </div>
-            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
+            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
+            <div class="col-lg-1">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
+            </div>
+            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice<span>*</span></label>
             <div class="col-lg-2">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
             </div>
@@ -560,38 +604,7 @@
     <div class="form-group ">
             
 
-            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-            </div>
-            <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="control-label col-lg-1 ">Width<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="control-label col-lg-1 ">Height<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
-            <div class="col-lg-2">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
-            </div>
-
-    </div>
-    </div>
-
-    <div class="row ">
-    <div class="form-group ">
             
-
-            <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-            </div>
             <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
             <div class="col-lg-1">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
@@ -604,35 +617,11 @@
             <div class="col-lg-1">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
             </div>
-            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
-            <div class="col-lg-2">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
-            </div>
-
-    </div>
-    </div>
-
-    <div class="row ">
-    <div class="form-group ">
-            
-
             <label for="inputDocument" class="control-label col-lg-1 ">Weight<span>*</span></label>
             <div class="col-lg-1">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
             </div>
-            <label for="inputDocument" class="control-label col-lg-1 ">Length<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="control-label col-lg-1 ">Width<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="control-label col-lg-1 ">Height<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice weight<span>*</span></label>
+            <label for="inputDocument" class="control-label col-lg-2 ">Dry ice<span>*</span></label>
             <div class="col-lg-2">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
             </div>
@@ -688,22 +677,26 @@
                                         <option>Description 4</option>
                                     </select>
                                 </div>
+                                <label for="inputDocument" class="control-label col-lg-3 ">Save</label>
+                                <div class="col-lg-3">
+                                    <input type="checkbox" id="inputDocument">
+                                </div>
 
-            <label for="inputDocument" class="control-label col-lg-3 ">Description<span>*</span></label>
+            <!-- <label for="inputDocument" class="control-label col-lg-3 ">Description<span>*</span></label>
                                 <div class="col-lg-3">
                                     <input type="text" class="form-control" id="inputAccountNo" placeholder="placeholder" required>
-                                </div>
+                                </div> -->
     </div>
     </div>
 
-    <div class="row">
+<!--     <div class="row">
         <div class="form-group">
             <label for="inputDocument" class="control-label col-lg-3 ">Save description</label>
                                 <div class="col-lg-3">
                                     <input type="checkbox" id="inputDocument">
                                 </div>
         </div>
-        </div>
+        </div> -->
 
 
 </div>
@@ -712,9 +705,6 @@
 <!-- Packages information ends here -->
 
         </div>
-
-
-
 
 
         </div>
@@ -728,51 +718,94 @@
 
             <table class="table table-bordered table-hover text-center">
 <tr class="table-header">
+    <td>Select</td>
     <td>Product</td>
     <td>Transport product</td>
     <td>Billable weight</td>
+    <td>Service point</td>
+    <td>Time in transit</td>
     <td>Price</td>
-    <td>Select</td>
 </tr>
 
 <tr>
+    <td><form><input type="checkbox"></form></td>
     <td>DHL Express for 1200</td>
     <td>DHL Express</td>
     <td>10,00</td>
+    <td><form action="">
+        <select>
+            <option>Serivce point 1</option>
+            <option selected="">Serivce point 2</option>
+            <option>Serivce point 1</option>
+        </select>
+    </form></td>
+    <td>N/A</td>
     <td>300,00</td>
-    <td><form><input type="checkbox"></form></td>
+    
 </tr>
 
 <tr>
+    <td><form><input type="checkbox"></form></td>   
     <td>DHL Express for 1200</td>
     <td>DHL Express</td>
     <td>10,00</td>
-    <td>300,00</td>
-    <td><form><input type="checkbox"></form></td>
+    <td><form action="">
+        <select>
+            <option>Serivce point 1</option>
+            <option selected="">Serivce point 2</option>
+            <option>Serivce point 1</option>
+        </select>
+    </form></td>
+    <td>N/A</td>
+    <td>300,00</td>   
 </tr>
 
 <tr>
+    <td><form><input type="checkbox"></form></td>
     <td>DHL Express for 1200</td>
     <td>DHL Express</td>
     <td>10,00</td>
-    <td>300,00</td>
-    <td><form><input type="checkbox"></form></td>
+    <td><form action="">
+        <select>
+            <option>Serivce point 1</option>
+            <option selected="">Serivce point 2</option>
+            <option>Serivce point 1</option>
+        </select>
+    </form></td>
+    <td>N/A</td>
+    <td>300,00</td>  
 </tr>
 
 <tr>
+    <td><form><input type="checkbox"></form></td>
     <td>DHL Express for 1200</td>
     <td>DHL Express</td>
     <td>10,00</td>
-    <td>300,00</td>
-    <td><form><input type="checkbox"></form></td>
+    <td><form action="">
+        <select>
+            <option>Serivce point 1</option>
+            <option selected="">Serivce point 2</option>
+            <option>Serivce point 1</option>
+        </select>
+    </form></td>
+    <td>N/A</td>
+    <td>300,00</td>   
 </tr>
 
 <tr>
+    <td><form><input type="checkbox"></form></td>
     <td>DHL Express for 1200</td>
     <td>DHL Express</td>
     <td>10,00</td>
+    <td><form action="">
+        <select>
+            <option>Serivce point 1</option>
+            <option selected="">Serivce point 2</option>
+            <option>Serivce point 1</option>
+        </select>
+    </form></td>
+    <td>N/A</td>
     <td>300,00</td>
-    <td><form><input type="checkbox"></form></td>
 </tr>
                 
      </table>
