@@ -265,4 +265,12 @@ footer{
 }
 hr{
     border-top: 1px solid #ddd;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1199px){
+    .right-col-div {
+   margin-left: -15px; 
+}
 }
