@@ -149,7 +149,7 @@
     <!-- Nav ends -->
 
 <!-- Main container starts -->
- <div class="container main-container">
+ <div class="container-fluid main-container">
 
  <div class="row ">
 
@@ -160,24 +160,51 @@
 
         <div class="row">
         <div class="col-lg-4">
-        
+
+         <!-- User Account -->
+        <div class="row  both-col-div dhl-tabs border-div">
+        <h2>Shipment information</h2>
+        <div class="form-group">
+                                <label for="inputCustomsValue" class="control-label col-lg-6 ">Account <span>*</span></label>
+                                <div class="col-lg-6">
+                                    <select class="form-control">
+                                        <option>Account 1</option>
+                                        <option selected>Account 2</option>
+                                        <option>Account 3</option>
+                                        <option>Account 4</option>
+                                    </select>
+                                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputImport" class="col-lg-6 ">Shipment Direction</label>
+                <div class="col-lg-6">
+                            <select class="form-control">
+                                        <option selected>Eksport/Domestic</option>
+                                        <option>Import</option>
+                                    </select>
+                </div>
+        </div>         
+  
+    <!-- User Account ends here -->
+<br>      
 <!-- tabs  -->
-<div class="row">
+
                 
-                <div class="col-lg-12 both-col-div dhl-tabs border-div">
-                <h2>Shipment information</h2>
+                <div class="col-lg-12 both-col-div dhl-tabs">
+                <!-- <h2>Shipment information</h2> -->
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
-                       <li role="presentation" class="active"><a href="#userAccount" aria-controls="userAccoun" role="tab" data-toggle="tab">User Account</a></li>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Receiver</a></li>
-                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Sender</a></li>
+                       <!-- <li role="presentation" ><a href="#userAccount" aria-controls="userAccoun" role="tab" data-toggle="tab">User Account</a></li> -->
+                        <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Receiver address</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Sender address</a></li>
                         <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Pickup address</a></li>
                     </ul>
 
                     <!-- Tab panes -->
                     <div class="tab-content">
                     <!-- User Account tab starts here -->
-                     <div role="tabpanel" class="tab-pane  active" id="userAccount">
+                     <!-- <div role="tabpanel" class="tab-pane" id="userAccount">
                      <form class="form-horizontal">
                      <div class="row">
                          <div class="col-lg-12">
@@ -205,12 +232,12 @@
                          </div>
                      </div>
                      </form>
-                     </div>   
+                     </div>  -->  
                     <!-- User Account tab ends here -->
 
 
                         <!-- Receiver Address tab -->
-                        <div role="tabpanel" class="tab-pane" id="profile">
+                        <div role="tabpanel" class="tab-pane active" id="profile">
 
                         <form action="" class="form-horizontal">
                         <div class="row">
@@ -550,6 +577,7 @@
         </div>
         </div> -->
 
+<hr>
     <div class="row ">
     <div class="form-group ">
             
@@ -589,7 +617,7 @@
     </div>
     </div>
 
-<br>
+<!-- Length width .. starts here -->
 
     <div class="row ">
     <div class="form-group ">
@@ -678,8 +706,8 @@
     </div>
     </div>
 
+<!-- Length width .. ends here -->
 
-<br>
     
     <div class="row ">
     <div class="form-group ">
@@ -768,7 +796,7 @@
 
 
 <!-- Show shipping options / Create shipment starts here -->
-<div class="container below-container">
+<div class="container-fluid main-container below-container">
 <div class="row">
         
 <div class="table-responsive">

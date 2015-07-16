@@ -80,9 +80,9 @@ header{
 
 
 /* Main container*/
-/*.main-container{
-    padding: 0px 30px;
-}*/
+.main-container{
+    padding: 0px 40px;
+}
 
 /*.dhl-tabs{  
     margin-bottom: 20px;
@@ -262,4 +262,7 @@ footer{
 
 .below-container{
     margin-bottom:30px;
+}
+hr{
+    border-top: 1px solid #ddd;
 }
