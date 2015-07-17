@@ -265,8 +265,8 @@ footer{
 }
 hr{
     border-top: 1px solid #ddd;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 1199px){
