@@ -12,7 +12,7 @@ header{
     border-bottom: 8px solid #c00;
 }
 .nav > li > a{
-    padding:5px 14px;
+    padding:5px 8px;
 }
 .navbar-brand {
     float: left;
@@ -46,7 +46,7 @@ header{
 }
 .navbar-default .navbar-nav > li > a {
     color: #000;
-    font-weight: bold;
+    font-weight: 600;
 }
 .dropdown-menu > li > a {
 	padding: 6px 20px;
@@ -96,18 +96,18 @@ header{
     color: #000;
 }
 .dhl-tabs li a:hover{
-    background-color: #c00 !important;
-    color: #fc0 !important;
+    background-color: #ddd !important;
+    color: #000 !important;
 }
 .dhl-tabs .nav-tabs>li.active>a, .dhl-tabs .nav-tabs>li.active>a:focus, .dhl-tabs .nav-tabs>li.active>a:hover {
-    background-color: #c00 !important;
-    color: #fc0 !important;
+    background-color: #ddd !important;
+    color: #000 !important;
 }
 .dhl-tabs .nav-tabs{
-    border-bottom:1px solid #c00;
+    border-bottom:1px solid #ddd;
 }
 .form-group {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     overflow: hidden;
 }
 .form-group label span{
@@ -134,9 +134,9 @@ h2, .table-header{
     font-size: 16px;
     font-weight: bold;
     margin: 0px 0 10px 0;
-    border-bottom: 1px solid #fc0;
+    border-bottom: 1px solid #efefef;
     padding:10px;
-    background-color: #fc0;
+    background-color: #efefef;
 }
 table .table-hover>tr .table-header:hover{
     background-color: #fc0 !important;
@@ -153,10 +153,10 @@ select .dhl-option{
     position: absolute;
 }*/
 .btn-create{
-    background-color: #fc0;
+    background-color: #ddd;
     color: #000;
     border:none;
-    margin-top: 5px;
+    margin: 5px auto;
     border-radius: 0px;
 }
 .btn-create:hover{
@@ -164,6 +164,9 @@ select .dhl-option{
     color: #fc0;
     border: none;
     transition: background-color 0.5s ease;
+}
+.btn-main{
+    background-color: #fc0;
 }
 .btn-save{
     margin-top: 10px;
@@ -196,16 +199,16 @@ footer{
     padding-right: 0px;
 }
 .border-div{
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     padding-top: 0px;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-.border-div:hover{
+/*.border-div:hover{
     background-color: #f6f6f6;
-}
+}*/
 .border-div input, .border-div select, .table-select {
-  border: none;
+  /*border: none;*/
   box-shadow: 0px 0px 0px;
   border-radius: 0px;
   border-bottom: 1px solid #ccc;
@@ -220,7 +223,7 @@ footer{
 .dhl-tabs .nav > li > a{
     padding:5px 10px;
     border-radius: 0px;
-    border-bottom-color: #c00;
+    border-bottom-color: #ddd;
 }
 .dhl-tabs .nav-tabs>li.active>a, .dhl-tabs .nav-tabs>li.active>a:focus, 
 .dhl-tabs .nav-tabs>li.active>a:hover, .dhl-tabs .nav-tabs>li>a{
@@ -248,9 +251,9 @@ footer{
     right: 2em;
     text-decoration: none;
     color: #000;
-    background-color: #fc0;
+    background-color: #ddd;
     font-size: 12px;
-    padding: 10px;
+    padding: 6px 12px;
     display: none;
 }
 
@@ -261,7 +264,7 @@ footer{
 }
 
 .below-container{
-    margin-bottom:30px;
+    margin-bottom:20px;
 }
 hr{
     border-top: 1px solid #ddd;
@@ -273,4 +276,16 @@ hr{
     .right-col-div {
    margin-left: -15px; 
 }
+}
+
+.table-select {
+  border: none;
+  box-shadow: 0px 0px 0px;
+  border-radius: 0px;
+  width: 100%;
+  padding: 5px 0px;
+/*  border-bottom: 1px solid #ccc;*/
+}
+label{
+    font-weight: 600;
 }
