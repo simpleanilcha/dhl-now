@@ -247,7 +247,7 @@ footer{
 
 .go-top {
     position: fixed;
-    bottom: 2em;
+    bottom: 25px;
     right: 2em;
     text-decoration: none;
     color: #000;
