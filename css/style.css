@@ -84,9 +84,9 @@ header{
     padding: 0px 40px;
 }
 
-/*.dhl-tabs{  
-    margin-bottom: 20px;
-}*/
+.dhl-tabs{  
+    margin-top: 15px;
+}
 .dhl-tabs .tab-content{
     padding: 20px 20px 0px;
     display: block;
@@ -100,7 +100,7 @@ header{
     color: #000 !important;
 }
 .dhl-tabs .nav-tabs>li.active>a, .dhl-tabs .nav-tabs>li.active>a:focus, .dhl-tabs .nav-tabs>li.active>a:hover {
-    background-color: #ddd !important;
+    background-color: #fc0 !important;
     color: #000 !important;
 }
 .dhl-tabs .nav-tabs{
@@ -108,7 +108,12 @@ header{
 }
 .form-group {
     margin-bottom: 8px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    display: block;
+}
+.border-div .form-group{
+    display: block;
+
 }
 .form-group label span{
     color:#c00;
@@ -130,13 +135,20 @@ h1{
     border-bottom: 1px solid #fc0;
     padding-bottom: 10px;
 }
-h2, .table-header{
+h2{
+    border-radius: 4px 4px 0 0;
+    color: #fc0;
     font-size: 16px;
     font-weight: bold;
     margin: 0px 0 10px 0;
     border-bottom: 1px solid #efefef;
     padding:10px;
-    background-color: #efefef;
+    background-color: #c00;
+}
+.table-header{
+    background-color: #fc0;
+    font-weight: 600;
+    color: #c00;
 }
 table .table-hover>tr .table-header:hover{
     background-color: #fc0 !important;
@@ -158,6 +170,7 @@ select .dhl-option{
     border:none;
     margin: 5px auto;
     border-radius: 0px;
+    font-weight: 600;
 }
 .btn-create:hover{
     background-color: #c00;
@@ -167,9 +180,11 @@ select .dhl-option{
 }
 .btn-main{
     background-color: #fc0;
+    font-weight: 600;
 }
 .btn-save{
     margin-top: 10px;
+    font-weight: 600;
 }
 
 .form-left{
@@ -200,6 +215,7 @@ footer{
 }
 .border-div{
     border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
     padding-top: 0px;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -227,7 +243,11 @@ footer{
 }
 .dhl-tabs .nav-tabs>li.active>a, .dhl-tabs .nav-tabs>li.active>a:focus, 
 .dhl-tabs .nav-tabs>li.active>a:hover, .dhl-tabs .nav-tabs>li>a{
+    background-color: #ddd;
     border:none;
+    font-weight: 600;
+    border-radius: 4px 4px 0 0;
+    padding: 8px 10px !important;
     /*border-top:none;
     border-left:none;
     border-right:none;*/
@@ -288,4 +308,15 @@ hr{
 }
 label{
     font-weight: 600;
+}
+
+
+.try-form .dropdown-menu>li>a:focus, .try-form .dropdown-menu>li>a:hover {
+  color: #262626;
+  text-decoration: none;
+  background-color: #fc0 !important;
+}
+
+.try-form .bootstrap-select.btn-group .dropdown-menu , .try-form .btn-group>.btn:first-child { 
+    border-radius:0px !important;
 }
