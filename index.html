@@ -13,7 +13,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Date picker -->
-    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> -->
     <!-- Select css -->
     <link href="css/bootstrap-select.min.css" rel="stylesheet">
     <!-- custom checkbox css -->
@@ -29,6 +29,7 @@
 </head>
 
 <body>
+<div class="position-fix">
     <header role="banner">
         <div class="container-fluid">
             <div class="row">
@@ -151,6 +152,9 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- Nav ends -->
+</div>
+
+<div class="fix-top"></div>
 
 <!-- Main container starts -->
  <div class="container-fluid main-container">
@@ -426,12 +430,25 @@
 
 <form class="form-horizontal">
 
-
             <div class="form-group">
             <label for="inputDocument" class="col-lg-3 ">Ship date <span>*</span></label>
             <div class="col-lg-3">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="MM-DD-YYYY" required>
+            <div id="datetimepicker1" class="input-group date">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            
+                                        </div>
             </div>
+            <div class="col-lg-3">
+            <div id="datetimepicker4" class="input-group date">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                            
+                                        </div>
+            </div>
+         <!--    <div class="col-lg-3">
+                <input type="text" class="form-control" id="inputAccountNo" placeholder="MM-DD-YYYY" required>
+            </div> -->
             </div>
 
 
@@ -519,14 +536,16 @@
                         <ins class="iCheck-helper" ></ins>
                 </div>
         </label>
-                           
-         <label for="inputDocument" class="col-lg-2 ">Account no.<span>*</span></label>
-            <div class="col-lg-2">
+        </div>
+        
+        <div class="form-group">                   
+         <label for="inputDocument" class="col-lg-3 ">Account no.<span>*</span></label>
+            <div class="col-lg-3">
                 <input type="text" class="form-control" id="inputAccountNo" placeholder="0000" required>
             </div>
-            <label for="inputDocument" class="col-lg-2 ">Carrier<span>*</span></label>
+            <label for="inputDocument" class="col-lg-3 ">Carrier<span>*</span></label>
             
-                                <div class="col-lg-2">
+                                <div class="col-lg-3">
                                     <select class="form-control">
                                         <option>Carrier 1</option>
                                         <option selected>Carrier 2</option>
@@ -976,8 +995,37 @@
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
+    <!-- Date picker js -->
+<script type="text/javascript" src="js/moment-2.4.0.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+
+ <script type="text/javascript">
+          
+            $(function () {
+                $('#datetimepicker1').datetimepicker({
+                    pickTime: false
+                });
+            });
+            
+            $(function () {
+                $('#datetimepicker4').datetimepicker({
+                    pickDate: false
+                });
+            });
+            
+            $(function () {
+                $('#datetimepicker8').datetimepicker({
+                    pickDate: false
+                });
+            });
+            
+            $(function () {
+                $('#datetimepicker9').datetimepicker({
+                    pickDate: false
+                });
+            });
+        </script> 
     <!-- Custom checkbox js -->
     <script src="js/icheck.min.js"></script>
     <script>
@@ -993,7 +1041,7 @@
     </script>
 
     <!-- Fixed navigation when scrolls -->
-<script>
+<!--<script>
     var  mn = $(".main-nav");
     mns = "main-nav-scrolled";
     hdr = $('header').height();
@@ -1005,7 +1053,7 @@ $(window).scroll(function() {
     mn.removeClass(mns);
   }
 });
-</script>
+</script>-->
 
 <!-- Go to Top -->
 <script>
@@ -1029,11 +1077,6 @@ $(window).scroll(function() {
     </script>
 
 
-      <script>
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>
 
 </body>
 
