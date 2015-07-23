@@ -168,7 +168,8 @@ select .dhl-option{
     background-color: #ddd;
     color: #000;
     border:none;
-    margin: 5px auto;
+    /*margin: 5px auto;*/
+    padding: 3px 12px !important;
     border-radius: 0px;
     font-weight: 600;
 }
@@ -181,9 +182,10 @@ select .dhl-option{
 .btn-main{
     background-color: #fc0;
     font-weight: 600;
+    padding: 6px 12px !important;
 }
 .btn-save{
-    margin-top: 10px;
+    margin-top: 5px;
     font-weight: 600;
 }
 
@@ -280,7 +282,6 @@ footer{
   position: fixed;
   width: 100%;
   display: block;
-  overflow: hidden;
   z-index: 99999;
 }
 .fix-top{
@@ -291,6 +292,17 @@ footer{
     background-color: #fc0;
     padding-top: 6px;
     
+}
+
+/*.new-field{
+    margin-bottom: 5px;
+}*/
+
+span.fa.fa-asterisk {
+  font-size: 6px !important;
+  position: relative;
+  top: -5px;
+  color: #c00;
 }
 
 .go-top {
@@ -314,14 +326,16 @@ footer{
 .below-container{
     margin-bottom:20px;
 }
+
 /* table css */
 .right-col-div .table{
     font-size: 12px;
 }
+
 hr{
     border-top: 1px solid #ddd;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1199px){
@@ -343,6 +357,8 @@ label{
 }
 
 
+
+
 .try-form .dropdown-menu>li>a:focus, .try-form .dropdown-menu>li>a:hover {
   color: #262626;
   text-decoration: none;
@@ -358,6 +374,10 @@ label{
     font-size: 12px !important;
     padding:4px 12px !important;
 }
+
+
+
+
 /*date and time picker starts from here*/
 
 span.input-group-addon
