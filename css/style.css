@@ -145,9 +145,10 @@ h2{
     padding:10px;
     background-color: #fc0;
 }
-.table-header{
+.tr-dhl-heading{
     background-color: #fc0;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 16px;
     color: #c00;
 }
 table .table-hover>tr .table-header:hover{
@@ -203,13 +204,15 @@ select .dhl-option{
 
 /* Footer css*/
 
-footer{
-    margin-top: 50px;
-    padding: 30px;
+.main-footer{
     color: #000;
-    border-top: 6px solid #eee;
+    background-color: #fc0;   
 }
-
+.main-footer p{
+    margin: 8px 0px;
+    font-weight: bold;
+    font-size: 13px;
+}
 
 .main-header{
     padding-left: 0px;
@@ -307,14 +310,19 @@ span.fa.fa-asterisk {
 
 .go-top {
     position: fixed;
-    bottom: 25px;
-    right: 2em;
+    bottom: 34px;
+    right: 0px;
     text-decoration: none;
     color: #000;
     background-color: #ddd;
     font-size: 12px;
-    padding: 6px 12px;
+    padding: 6px 10px;
     display: none;
+}
+
+.error-msg{
+    margin:5px 0 0 5px;
+    color: #c00;
 }
 
 .go-top:hover {
@@ -323,9 +331,9 @@ span.fa.fa-asterisk {
     transition: background-color 0.5s ease;
 }
 
-.below-container{
+/*.below-container{
     margin-bottom:20px;
-}
+}*/
 
 /* table css */
 .right-col-div .table{
