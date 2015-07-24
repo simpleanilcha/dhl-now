@@ -173,9 +173,9 @@
         <div class="row  both-col-div border-div">
         <h2>Shipment information</h2>
 
-
-<div class="col-lg-12">
 <form class="form-horizontal try-form">
+<div class="col-lg-12">
+
 
     <!-- <div class="form-group">
       <label class="col-lg-6" for="test-options">Country</label>
@@ -199,11 +199,17 @@
         <div class="form-group">
                                 <label for="inputCustomsValue" class="col-lg-5 ">Account <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-7">
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker" data-hide-disabled="true" data-size="5">
                                         <option>Account 1</option>
                                         <option selected>Account 2</option>
                                         <option>Account 3</option>
                                         <option>Account 4</option>
+                                        <option>Account 5</option>
+                                        <option>Account 6</option>
+                                        <option>Account 7</option>
+                                        <option>Account 8</option>
+                                        <option>Account 9</option>
+                                        <option>Account 10</option>
                                     </select>
                                      <div class="error-msg"><span class="fa fa-exclamation-triangle"></span> Invalid Account Input</div>
                                 </div>
@@ -213,14 +219,14 @@
         <div class="form-group">
             <label for="inputImport" class="col-lg-5 ">Shipment Direction</label>
                 <div class="col-lg-7">
-                            <select class="form-control">
+                            <select class="form-control selectpicker">
                                         <option selected>Eksport/Domestic</option>
                                         <option>Import</option>
                                     </select>
                 </div>
         </div>  
 
-        </form>
+        
         </div>      
   
     <!-- User Account ends here -->
@@ -254,13 +260,14 @@
                             
                             
                                 <div class="form-group">
-                                    <label class="col-lg-5" for="exampleAddressBook">Address Book</label>
+                                    <label class="col-lg-5" for="AddressBook">Address Book</label>
                                     <div class="col-lg-7">
-                                        <select class="form-control">
+                                        <select id="AddressBook" class="form-control selectpicker" data-hide-disabled="true">
                                             <option>Address Book 1</option>
                                             <option selected>Address Book 2</option>
                                             <option>Address Book 3</option>
                                             <option>Address Book 4</option>
+                                            
                                         </select>
                                     </div>
                                 </div>
@@ -275,7 +282,7 @@
                                 <div class="form-group">
                                     <label class="col-lg-5" for="exampleAccount">Search options</label>
                                     <div class="col-lg-4">
-                                        <select class="form-control">
+                                        <select class="form-control selectpicker">
                                             <option>Search options 1</option>
                                             <option selected>Search options 2</option>
                                             <option>Search options 3</option>
@@ -348,11 +355,18 @@
                                 <label class="col-lg-5" for="exampleCountryName">Country <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-7">
                                     <!--  <select  class="selectpicker show-tick form-control"> -->
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker" data-size="5">
                                         <option>Country 1</option>
                                         <option selected>Country 2</option>
                                         <option>Country 3</option>
                                         <option>Country 4</option>
+                                        <option>Country 5</option>
+                                        <option>Country 6</option>
+                                        <option>Country 7</option>
+                                        <option>Country 8</option>
+                                        <option>Country 9</option>
+                                        <option>Country 10</option>
+                                        <option>Country 11</option>
                                     </select>
                                 </div>
                             </div>
@@ -361,7 +375,7 @@
                                 <label class="col-lg-5" for="exampleStateName">State <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-7">
                                     <!--  <select  class="selectpicker show-tick form-control"> -->
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker">
                                         <option>State 1</option>
                                         <option selected>State 2</option>
                                         <option>State 3</option>
@@ -377,17 +391,17 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputEmailOne" class="col-lg-5">Email 1 <span class="fa fa-asterisk"></span></label>
+                                <label for="inputEmailOne" class="col-lg-5">Email <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-7">
-                                    <input type="text" class="form-control" id="inputEmailOne" placeholder="Email 1" required>
+                                    <input type="text" class="form-control" id="inputEmailOne" placeholder="Email" required>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="inputEmailTwo" class="col-lg-5">Email 2</label>
                                 <div class="col-lg-7">
                                     <input type="text" class="form-control" id="inputEmailTwo" placeholder="Email 2">
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
                                 <div class="col-lg-offset-2 col-lg-3">
@@ -428,8 +442,10 @@
 
         </div>
 
+</form>
 
 <!-- Right column -->
+<form class="form-horizontal try-form">
         <div class="col-lg-8">
 
         <!-- Shipment options starts -->
@@ -483,7 +499,7 @@
 
             
                                 <div class="col-lg-3">
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker">
                                         <option>Euro 1</option>
                                         <option selected>Euro 2</option>
                                         <option>Euro 3</option>
@@ -502,7 +518,7 @@
             </div>
 
                           <div class="col-lg-3">
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker">
                                         <option>Euro 1</option>
                                         <option selected>Euro 2</option>
                                         <option>Euro 3</option>
@@ -517,7 +533,7 @@
     <div class="form-group ">
             <label for="inputDocument" class="col-lg-3 ">Export reason</label>
             <div class="col-lg-3">
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker">
                                         <option>Reason 1</option>
                                         <option selected>Reason 2</option>
                                         <option>Reason 3</option>
@@ -527,7 +543,7 @@
 
             <label for="inputCustomsValue" class="col-lg-3 ">Incoterms</label>
                                 <div class="col-lg-3">
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker">
                                         <option>Incoterms 1</option>
                                         <option selected>Incoterms 2</option>
                                         <option>Incoterms 3</option>
@@ -548,7 +564,7 @@
 
         <label for="inputCustomsValue" class="col-lg-3 ">Dangerous goods</label>
                                 <div class="col-lg-3">
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker">
                                         <option>Dangerous goods 1</option>
                                         <option selected>Dangerous goods 2</option>
                                         <option>Dangerous goods 3</option>
@@ -576,7 +592,7 @@
             <label for="inputDocument" class="col-lg-3 ">Carrier <span class="fa fa-asterisk"></span></label>
             
                                 <div class="col-lg-3">
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker">
                                         <option>Carrier 1</option>
                                         <option selected>Carrier 2</option>
                                         <option>Carrier 3</option>
@@ -638,7 +654,7 @@
 
 <div class="form-group">
 <div class="col-lg-2">
-   <select class="form-control">
+   <select class="form-control selectpicker">
         <option>Packaging 1</option>
         <option selected>Packaging 2</option>
         <option>Packaging 3</option>
@@ -664,7 +680,7 @@
 
 <div class="form-group">
 <div class="col-lg-2">
-   <select class="form-control">
+   <select class="form-control selectpicker">
         <option>Packaging 1</option>
         <option selected>Packaging 2</option>
         <option>Packaging 3</option>
@@ -690,7 +706,7 @@
 
 <div class="form-group">
 <div class="col-lg-2">
-   <select class="form-control">
+   <select class="form-control selectpicker">
         <option>Packaging 1</option>
         <option selected>Packaging 2</option>
         <option>Packaging 3</option>
@@ -713,192 +729,6 @@
     <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
 </div>
 </div>
-
-
-<!-- option 2 -->
-<!-- <div class="form-group">
-<div class="col-lg-2">
-<label for="inputDocument" class=" ">Packaging<span class="fa fa-asterisk"></span></label>
-<div class="new-field">
-                                    <select class="form-control">
-                                        <option>Packaging 1</option>
-                                        <option selected>Packaging 2</option>
-                                        <option>Packaging 3</option>
-                                        <option>Packaging 4</option>
-                                    </select>
-                                </div>
-<div class="new-field">
-                                    <select class="form-control">
-                                        <option>Packaging 1</option>
-                                        <option selected>Packaging 2</option>
-                                        <option>Packaging 3</option>
-                                        <option>Packaging 4</option>
-                                    </select>
-                                </div>
-<div class="new-field">
-                                    <select class="form-control">
-                                        <option>Packaging 1</option>
-                                        <option selected>Packaging 2</option>
-                                        <option>Packaging 3</option>
-                                        <option>Packaging 4</option>
-                                    </select>
-                                </div>
-</div>
-
-<div class="col-lg-2">
-<label for="inputDocument" class=" ">Length<span class="fa fa-asterisk"></span></label>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-</div>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-</div>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-</div>
-</div>
-
-<div class="col-lg-2">
-<label for="inputDocument" class=" ">Width<span class="fa fa-asterisk"></span></label>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-</div>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-</div>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-</div>
-</div>
-
-<div class="col-lg-2">
-<label for="inputDocument" class=" ">Height<span>*</span></label>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-</div>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-</div>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-</div>
-</div>
-
-<div class="col-lg-2">
-<label for="inputDocument" class=" ">Weight<span>*</span></label>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-</div>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-</div><span class="fa fa-asterisk"></span>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-</div>
-</div>
-
-<div class="col-lg-2">
-<label for="inputDocument" class=" ">Dryice<span>*</span></label>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-</div>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-</div>
-<div class="new-field">
-    <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-</div>
-</div>
-
-
-</div> -->
-
-
-<!-- Option 3 -->
-    <!-- <div class="form-group ">
-            
-
-            
-            <label for="inputDocument" class="col-lg-1 ">Length<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Width<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Height<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Weight<span>*</span></label>
-            <div class="col-lg-2">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Dryice<span>*</span></label>
-            <div class="col-lg-2">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
-            </div>
-
-    </div>
-
-
-
-    <div class="form-group ">
-            
-
-            
-            <label for="inputDocument" class="col-lg-1 ">Length<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Width<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Height<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Weight<span>*</span></label>
-            <div class="col-lg-2">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Dryice<span>*</span></label>
-            <div class="col-lg-2">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
-            </div>
-
-    </div>
-
-
-
-    <div class="form-group ">
-            
-
-            
-            <label for="inputDocument" class="col-lg-1 ">Length<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Width<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Height<span>*</span></label>
-            <div class="col-lg-1">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="cm" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Weight<span>*</span></label>
-            <div class="col-lg-2">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="Kg" required>
-            </div>
-            <label for="inputDocument" class="col-lg-1 ">Dryice<span>*</span></label>
-            <div class="col-lg-2">
-                <input type="text" class="form-control" id="inputAccountNo" placeholder="kg" required>
-            </div>
-
-    </div> -->
 
 
 <!-- Length width .. ends here -->
@@ -942,15 +772,20 @@
 
             <label for="inputDocument" class="col-lg-3 ">Description</label>
             <div class="col-lg-3">
-                                    <select class="form-control">
+                                    <select class="form-control selectpicker">
                                         <option>Description 1</option>
                                         <option selected>Description 2</option>
                                         <option>Description 3</option>
                                         <option>Description 4</option>
                                     </select>
                                 </div>
-                                <label for="inputDocument" class="col-lg-3 ">Save</label>
-                                <label class="col-lg-3 ">
+
+                                <div class="col-lg-3">
+                                    <input type="text" class="form-control" id="inputAccountNo" placeholder="text">
+                                </div>
+
+                                <label for="inputDocument" class="col-lg-1 ">Save</label>
+                                <label class="col-lg-2 ">
                 <div class="icheckbox_square-green">
                    <input type="checkbox" value="" name="" id="" class="i-checks">
                         <ins class="iCheck-helper" ></ins>
@@ -1068,8 +903,8 @@
     </table>
     </td>
 
-    <td><form action="">
-        <select class="table-select">
+    <td><form action="" class="try-form">
+        <select class="table-select selectpicker">
             <option>Serivce point 1</option>
             <option selected="">Serivce point 2</option>
             <option>Serivce point 1</option>
@@ -1114,8 +949,8 @@
     </table>
     </td>
 
-    <td><form action="">
-        <select class="table-select">
+    <td><form action="" class="try-form">
+        <select class="table-select selectpicker">
             <option>Serivce point 1</option>
             <option selected="">Serivce point 2</option>
             <option>Serivce point 1</option>
@@ -1160,8 +995,8 @@
     </table>
     </td>
 
-    <td><form action="">
-        <select class="table-select">
+    <td><form action="" class="try-form">
+        <select class="table-select selectpicker">
             <option>Serivce point 1</option>
             <option selected="">Serivce point 2</option>
             <option>Serivce point 1</option>
@@ -1206,8 +1041,8 @@
     </table>
     </td>
 
-    <td><form action="">
-        <select class="table-select">
+    <td><form action="" class="try-form">
+        <select class="table-select selectpicker">
             <option>Serivce point 1</option>
             <option selected="">Serivce point 2</option>
             <option>Serivce point 1</option>
@@ -1230,7 +1065,7 @@
         </div>
         </div>
 
-
+</form>
 <!-- Create shipment button starts here -->
 <!-- <div class="container-fluid main-container below-container">
 <div class="row">

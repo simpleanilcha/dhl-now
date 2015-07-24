@@ -92,10 +92,10 @@ header{
     display: block;
     overflow: hidden;
 }
-.dhl-tabs li a{
+.dhl-tabs .nav-tabs li a{
     color: #000;
 }
-.dhl-tabs li a:hover{
+.dhl-tabs .nav-tabs li a:hover{
     background-color: #ddd !important;
     color: #c00 !important;
 }
@@ -323,6 +323,10 @@ span.fa.fa-asterisk {
 .error-msg{
     margin:5px 0 0 5px;
     color: #c00;
+/*    font-weight: 600;*/
+}
+.error-msg .fa-exclamation-triangle{
+    font-size: 14px;
 }
 
 .go-top:hover {
@@ -373,10 +377,17 @@ label{
   background-color: #fc0 !important;
 }
 
-.try-form .bootstrap-select.btn-group .dropdown-menu , .try-form .btn-group>.btn:first-child { 
+.try-form .bootstrap-select .btn-group .dropdown-menu , .try-form .btn-group>.btn:first-child { 
     border-radius:0px !important;
 }
 
+.try-form span.filter-option.pull-left {
+    font-size: 12px;
+}
+
+td .try-form{
+    width: 100%;
+}
 
 .date .input-group-addon {
     font-size: 12px !important;
