@@ -341,7 +341,7 @@ span.fa.fa-asterisk {
 }*/
 
 /* table css */
-.right-col-div .table{
+.right-col-div .table, .history-table .table{
     font-size: 12px;
 }
 
@@ -395,7 +395,13 @@ td .try-form{
     padding:4px 12px !important;
 }
 
-
+/* History page css*/
+.history-btn{
+    margin-bottom: 25px;
+}
+.history-btn button{
+    margin-right: 8px;
+}
 
 
 /*date and time picker starts from here*/
