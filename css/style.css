@@ -393,14 +393,30 @@ td .try-form{
 .date .input-group-addon {
     font-size: 12px !important;
     padding:4px 12px !important;
+    border-radius: 0px;
 }
 
 /* History page css*/
+
 .history-btn{
     margin-bottom: 25px;
 }
 .history-btn button{
     margin-right: 8px;
+}
+.history-table .table .filter-action-btns{
+    text-align: center;
+}
+.filter-action-btns a{
+    color: #000;
+    font-size: 14px !important;
+    margin:0px 4px;
+}
+.filter-action-btns .not-delivered {
+    color: #c00 !important;
+}
+.filter-action-btns .invoice-created, .filter-action-btns .shipment-delivered {
+    color: #090 !important;
 }
 
 
