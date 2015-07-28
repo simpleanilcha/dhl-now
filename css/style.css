@@ -146,15 +146,15 @@ h2{
     background-color: #fc0;
 }
 .tr-dhl-heading{
-    background-color: #fc0;
+    background-color: #fc0 !important;
     font-weight: bold;
     font-size: 16px;
     color: #c00;
 }
-table .table-hover>tr .table-header:hover{
+/*table .table-hover tr .table-header:hover{
     background-color: #fc0 !important;
 }
-/*.dhl-form input, select, select .dhl-option{
+.dhl-form input, select, select .dhl-option{
     text-align: center !important;
 }
 select{
@@ -405,7 +405,7 @@ td .try-form{
     margin-right: 8px;
 }
 .history-table .table .filter-action-btns{
-    text-align: center;
+    /*text-align: center;*/
 }
 .filter-action-btns a{
     color: #000;
