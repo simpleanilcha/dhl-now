@@ -397,7 +397,19 @@ td .try-form{
 }
 
 /* History page css*/
-
+ .history-filter-heading{
+    margin-bottom: 3px !important;
+}
+ .history-filter-heading label{
+    margin-bottom: 2px !important;
+}
+.tr-history-heading{
+    font-weight: 600;
+    border-radius: 4px 4px 0 0;
+    padding: 5px 10px !important;
+    font-size: 12px;
+    background-color: #fc0 !important;
+}
 .history-btn{
     margin-bottom: 25px;
 }
