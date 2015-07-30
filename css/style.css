@@ -435,7 +435,9 @@ td .try-form{
 .filter-action-btns .invoice-created, .filter-action-btns .shipment-delivered {
     color: #090 !important;
 }
-
+.filter-action-btns .modal-dialog{
+    margin: 150px auto 30px;
+}
 
 /*date and time picker starts from here*/
 
