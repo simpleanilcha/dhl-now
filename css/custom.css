@@ -14,7 +14,8 @@
     background: url(../images/yellow.png) no-repeat;
     border: none;
     cursor: pointer;
-	z-index:999;
+	/*z-index:999;*/
+    z-index: 8;
 	position:relative;
 }
 

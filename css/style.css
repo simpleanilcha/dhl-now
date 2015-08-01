@@ -285,7 +285,7 @@ select .dhl-option{
   position: fixed;
   width: 100%;
   display: block;
-  z-index: 99999;
+  z-index: 9;
 }
 .fix-top{
     height: 96px;
@@ -411,15 +411,16 @@ td .try-form{
     background-color: #fc0 !important;
 }
 .history-btn{
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
-.history-btn button{
+.history-btn .btn-main{
     margin-right: 8px;
+    margin-bottom: 5px;
 }
 .history-table .table .filter-action-btns{
     /*text-align: center;*/
 }
-.filter-action-btns a{
+.filter-action-btns .actions-btn{
     background-color: #fc0;
     border-radius: 50%;
     padding: 5px 7px;
@@ -436,8 +437,47 @@ td .try-form{
     color: #090 !important;
 }
 .filter-action-btns .modal-dialog{
-    margin: 150px auto 30px;
+    margin: 120px auto 30px;
 }
+.filter-action-btns .modal-header{
+    padding: 8px 15px;
+    border-radius: 5px 5px 0 0;
+    background-color: #c00;
+    color: #fff;
+}
+.filter-action-btns .modal-title{
+    font-size: 15px;
+}
+.filter-action-btns .modal-body{
+    font-size: 13px;
+}
+.filter-action-btns .modal .border-div{
+    border: none;
+    padding: 15px 10px !important;
+    margin-bottom: 0px;
+}
+.dhl-modal-list{
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.dhl-modal-list li label{
+    min-width: 120px;
+    margin-bottom: 2px;
+}
+.modal-body .dropdown-menu>li>a:focus, .modal-body .dropdown-menu>li>a:hover {
+  color: #262626;
+  text-decoration: none;
+  background-color: #fc0 !important;
+}
+.modal-body .bootstrap-select .btn-group .dropdown-menu, .modal-body .btn-group>.btn:first-child{
+    border-radius: 0px !important;
+}
+.filter-action-btns .modal-footer{
+    padding: 8px 15px;
+}
+
+
 
 /*date and time picker starts from here*/
 
