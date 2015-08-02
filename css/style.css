@@ -174,11 +174,11 @@ select .dhl-option{
     border-radius: 0px;
     font-weight: 600;
 }
-.btn-create:hover{
+.btn-create:hover, .btn-create:focus, .btn-create:visited{
     background-color: #c00;
     color: #fc0;
     border: none;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.4s ease;
 }
 .btn-main{
     background-color: #fc0;
