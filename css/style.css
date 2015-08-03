@@ -447,6 +447,12 @@ td .try-form{
     color: #c00;
     font-size: 14px;
 }
+.circle-icon:hover{
+    opacity: 0.7;
+}
+.filter-action-btns .fa-info{
+    font-size: 15px;
+}
 .filter-action-btns .actions-btn{
     /*background-color: #fc0;
     border-radius: 50%;
@@ -457,7 +463,7 @@ td .try-form{
     /*color: #000;*/
     /*margin:0px 4px;*/
 }
-.filter-action-btns .not-delivered {
+.filter-action-btns .not-delivered{
     color: #c00 !important;
 }
 .filter-action-btns .invoice-created, .filter-action-btns .shipment-delivered {
