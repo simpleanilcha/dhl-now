@@ -208,6 +208,13 @@ select .dhl-option{
     margin-bottom: 20px;
 }
 
+.li-checkbox{
+    margin-bottom: 5px;
+}
+.li-checkbox span{
+    margin-right: 10px;
+}
+
 /* Footer css*/
 
 /*.footer {

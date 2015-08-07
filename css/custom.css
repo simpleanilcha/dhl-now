@@ -30,10 +30,12 @@
 }
 .icheckbox_square-green.disabled {
     background-position: -72px 0;
-    cursor: default;
+    /*cursor: default;*/
+    cursor: no-drop;
 }
 .icheckbox_square-green.checked.disabled {
     background-position: -96px 0;
+    cursor: no-drop !important;
 }
 
 .iradio_square-green {
