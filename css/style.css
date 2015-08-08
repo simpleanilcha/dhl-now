@@ -211,8 +211,8 @@ select .dhl-option{
 .li-checkbox{
     margin-bottom: 5px;
 }
-.li-checkbox span{
-    margin-right: 10px;
+.li-checkbox span, .single-input{
+    margin-right: 8px;
 }
 
 /* Footer css*/
@@ -502,7 +502,7 @@ td .try-form{
     list-style: none;
 }
 .dhl-modal-list li label{
-    min-width: 120px;
+    min-width: 130px; /* 120px */
     margin-bottom: 2px;
 }
 .modal-body .dropdown-menu>li>a:focus, .modal-body .dropdown-menu>li>a:hover {

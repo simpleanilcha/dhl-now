@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
-    <title>DHL | Customer</title>
+    <title>DHL | Booking Options</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Date picker -->
+    <!-- <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> -->
     <!-- Select css -->
     <link href="css/bootstrap-select.min.css" rel="stylesheet">
     <!-- custom checkbox css -->
@@ -136,32 +138,78 @@
     <div class="container-fluid main-container">
         <div class="row ">
             <div class="col-lg-12 main-header">
-                <h1>Customers</h1>
+                <h1>Booking options</h1>
             </div>
         </div>
         <div class="row">
+            <div class="col-lg-12">
+                <!-- Filter starts -->
+                <form class="form-horizontal try-form">
+                    <div class="row  both-col-div border-div">
+                        <h2>Filter</h2>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="inputSearchText" class="col-lg-1">Filter by:</label>
+
             
+              <label for="radioOrganization" class="col-lg-2">
+<label class="single-input"> <span class="iradio_square-green">
+              <input type="radio" value="NoCustoms" name="No Customs" id="radioOrganization" class="i-checks" checked="">
+              <ins class="iCheck-helper" ></ins> </span> </label>
+               Organization</label>
+              <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Organization 1</option>
+                                        <option selected>Organization 2</option>
+                                        <option>Organization 3</option>
+                                        <option>Organization 4</option>
+                                        <option>Organization 5</option>
+                                    </select>
+                                </div>
+
+                                
+              <label for="radioCompany" class="col-lg-2">
+              <label class="single-input"> <span class="iradio_square-green">
+              <input type="radio" value="NoCustoms" name="No Customs" id="radioCompany" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </label>
+              Company</label>
+                                
+                                <!-- <label for="inputSearchText" class="col-lg-2">Search options</label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Option 1</option>
+                                        <option selected>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                        <option>Option 5</option>
+                                    </select>
+                                </div> -->
+                                <div class="col-lg-2">
+                                    <button type="submit" class="btn btn-default btn-create">Filter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
             <!-- Table starts here -->
             <div class="col-lg-12">
                 <div class="row history-table">
                     <div class="table-responsive">
                         <table class="table table-bordered">
-                            <!-- <tr class="table-header tr-dhl-heading tr-history-heading"> -->
                             <tr class="table-header tr-dhl-heading">
+                                <td>Booking options</td>
                                 <td>Customer</td>
-                                <td>Branch</td>
-                                <td>Organization</td>
-                                <td>VAT number</td>
+                                <td>Company account</td>
                                 <td>Actions</td>
                             </tr>
                             <tr>
-                                <td>Customer1</td>
-                                <td>BranchName1</td>
-                                <td>Organization1</td>
-                                <td>VATnumber1</td>
+                                <td>1</td>
+                                <td>Sveta</td>
+                                <td>Account1</td>
                                 <td class="filter-action-btns">
-                                <a href="" class="actions-btn" title="Info" data-toggle="modal" data-target="#myModal01"><span class="fa fa-info circle-icon"></span></a>
-                                <!-- Modal01 -->
+                                    <a href="" class="actions-btn" title="Info" data-toggle="modal" data-target="#myModal01"><span class="fa fa-info circle-icon"></span></a>
+                                    <!-- Modal01 -->
                                     <div class="modal fade" id="myModal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
@@ -172,68 +220,145 @@
                                                 <div class="modal-body">
                                                         <div class="row">
                                                         <div class="col-lg-12">
-                                                            <ul class="dhl-modal-list col-lg-6">
-                                                                <label><strong>Customer</strong></label>
-                                                                <li>
-                                                                    <label>Customer:</label>Customer1</li> 
-                                                                <li>
-                                                                    <label>Branch:</label>BranchName1</li>
-                                                                <li>
-                                                                    <label>Organization:</label>Organization1</li>
-                                                                <li>
-                                                                    <label>VAT number:</label>VATnumber1</li>
-                                                            </ul>
-                                                            <ul class="dhl-modal-list col-lg-6">
-                                                                <label><strong>Address</strong></label>
-                                                                <li>
-                                                                    <label>Country:</label>Denmark</li>
-                                                                <li>
-                                                                    <label>City:</label>City test</li>
-                                                                <li>
-                                                                    <label>Postal code:</label>11661</li>
-                                                                <li>
-                                                                    <label>Address:</label>test address</li>
-                                                                <li>
-                                                                    <label>Email:</label>test@mail.ru</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
                                                         <ul class="dhl-modal-list col-lg-6">
-                                                                <label><strong>Invoice settings</strong></label>
-                                                                <li class="li-checkbox">
+                                                        <label><strong>Booking options for</strong></label>
+                                                            <li><label>Customer:</label>Sveta</li>
+                                                        </ul>
+
+                                                        <ul class="dhl-modal-list col-lg-6">
+                                                        <label><strong>Booking options required fields</strong></label>
+                                                            <li class="li-checkbox">
                     <span class="icheckbox_square-green disabled">
                     <input type="checkbox" class="i-checks disabled" disabled>
                     <ins class="iCheck-helper"></ins> </span>
-                    Attach CSV file
-                                                                </li> 
-                                                                <li class="li-checkbox">
-                    <span class="icheckbox_square-green disabled">
-                    <input type="checkbox" class="i-checks disabled" disabled>
-                    <ins class="iCheck-helper"></ins> </span>
-                    Attach PDF file</li>
+                    Contact person</li> 
                                                                 <li class="li-checkbox">
                     <span class="icheckbox_square-green checked disabled">
                     <input type="checkbox" class="i-checks disabled" disabled>
                     <ins class="iCheck-helper"></ins> </span>
-                    Transfer data to Visma
-                                                                </li>
+                    Senders reference</li>
+                                                                <li class="li-checkbox">
+                    <span class="icheckbox_square-green checked disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Receivers reference</li>
+                                                        </ul>
+
+
+                                                        <ul class="dhl-modal-list col-lg-12">
+                                                        <label><strong>Booking options</strong></label>
+                                                        <li>
+
+
+                                                            <ul class="dhl-modal-list col-lg-6">
+                                                                
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green checked disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Package dimensions</li>
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Dry ice</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Collect shipments</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Incoterms</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Insurance</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Import</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green checked disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Transport product</li>  
+                                                                
                                                             </ul>
+                                                            <ul class="dhl-modal-list col-lg-6">
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Save address</li>
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green checked disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Show price</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green checked disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Dangerous goods</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Charge RAS</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    C.O.D.</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Export reason</li> 
+                    <li class="li-checkbox">
+                    <span class="icheckbox_square-green disabled">
+                    <input type="checkbox" class="i-checks disabled" disabled>
+                    <ins class="iCheck-helper"></ins> </span>
+                    Packaging type</li>
+                                                            </ul>
+
+                                                            </li>
+                                                            </ul>
+
+                                                <ul class="dhl-modal-list col-lg-12">
+                                                    <label><strong>Booking options default settings</strong></label>
+                                                        <li><label>Senders reference:</label>Default Senders reference</li>
+                                                        <li><label>Receivers reference:</label>Default Receivers reference</li>
+                                                        <li><label>Description:</label>Default Description</li>
+                                                        <li><label>Customs value:</label>50.00</li>
+                                                        <li><label>Customs currency:</label>EUR</li>
+                                                        <li><label>Search criteria:</label>Company name</li>
+                                                </ul>
+
                                                         </div>
                                                     </div>
+
+
+
     
                                                 </div>
                                                 <div class="modal-footer">
         <button type="button" class="btn btn-default btn-create" data-dismiss="modal">Close</button>
-       <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Modal01 ends --> 
-                                    <a href="company-customer-create.html" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
+
+
+                                    <a href="company-booking-create.html" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
+
+
                                     <a href="" class="actions-btn" title="Delete" data-toggle="modal" data-target="#myModal02"><span class="fa fa-trash-o circle-icon"></span></a>
                                     <!-- Modal02 -->
                                     <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -245,13 +370,9 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <ul class="dhl-modal-list">
-                                                        <label><strong>Are you sure you want to delete this Customer?</strong></label>
+                                                        <label><strong>Are you sure you want to delete this Booking options?</strong></label>
                                                         <li>
-                                                            <label>Customer:</label>Customer1</li>
-                                                        <li>
-                                                            <label>Branch:</label>BranchName1</li>
-                                                        <li>
-                                                            <label>Organization:</label>Organization1</li>
+                                                            <label>Customer:</label>Sveta</li>
                                                     </ul>
                                                 </div>
                                                 <div class="modal-footer">
@@ -264,43 +385,40 @@
                                     <!-- Modal02 ends -->
                                 </td>
                             </tr>
+
                             <tr>
-                                <td>Customer1</td>
-                                <td>BranchName1</td>
-                                <td>Organization1</td>
-                                <td>VATnumber1</td>
+                                <td>2</td>
+                                <td>Sveta</td>
+                                <td>Account2</td>
                                 <td class="filter-action-btns">
-                                <a href="" class="actions-btn" title="Info"><span class="fa fa-info circle-icon"></span></a>
-                                    <a href="company-customer-create.html" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
+                                    <a href="" class="actions-btn" title="Info"><span class="fa fa-info circle-icon"></span></a>
+                                    <a href="company-booking-create.html" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
                                     <a href="" class="actions-btn" title="Delete"><span class="fa fa-trash-o circle-icon"></span></a>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>Customer1</td>
-                                <td>BranchName1</td>
-                                <td>Organization1</td>
-                                <td>VATnumber1</td>
+                                <td>3</td>
+                                <td>Sveta</td>
+                                <td>Account3</td>
                                 <td class="filter-action-btns">
-                                <a href="" class="actions-btn" title="Info"><span class="fa fa-info circle-icon"></span></a>
-                                    <a href="company-customer-create.html" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
+                                    <a href="" class="actions-btn" title="Info"><span class="fa fa-info circle-icon"></span></a>
+                                    <a href="company-booking-create.html" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
                                     <a href="" class="actions-btn" title="Delete"><span class="fa fa-trash-o circle-icon"></span></a>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>Customer1</td>
-                                <td>BranchName1</td>
-                                <td>Organization1</td>
-                                <td>VATnumber1</td>
+                                <td>4</td>
+                                <td>Sveta</td>
+                                <td>Account4</td>
                                 <td class="filter-action-btns">
-                                <a href="" class="actions-btn" title="Info"><span class="fa fa-info circle-icon"></span></a>
-                                    <a href="company-customer-create.html" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
+                                    <a href="" class="actions-btn" title="Info"><span class="fa fa-info circle-icon"></span></a>
+                                    <a href="company-booking-create.html" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
                                     <a href="" class="actions-btn" title="Delete"><span class="fa fa-trash-o circle-icon"></span></a>
                                 </td>
-                            </tr>                            
+                            </tr>
                             
- 
                         </table>
                     </div>
                 </div>
@@ -308,7 +426,7 @@
             <!-- Table ends here -->
         </div>
         <div class="row history-btn">
-            <a href="company-customer-create.html" type="submit" class="btn btn-default btn-create btn-main">Create New</a>
+            <a href="company-booking-create.html" type="submit" class="btn btn-default btn-create btn-main">Create New</a>
         </div>
     </div>
     <!-- Footer starts -->

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
+    <title>DHL | Create Booking Options</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Select css -->
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- custom checkbox css -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="position-fix">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-2 col-xs-6 ">
+                        <a href="index.html"> <img src="images/dhl_logo.gif" alt="DHL" title="DHL" class="img-responsive"> </a>
+                    </div>
+                    <div class="col-lg-offset-8 col-lg-2 col-sm-offset-7 col-sm-3 col-xs-6">
+                        <div class="user-login">
+                            <a href="#" class="user-name"><img src="images/user-icon.png" alt="user" title="user" width="20" height="20" class="img-circle"><span>Steva<span class="fa fa-angle-down"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+        <!-- Nav starts -->
+        <nav class="navbar navbar-default main-nav">
+            <div class="container-fluid main-nav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="branch.html">Branch <span class="sr-only">(current)</span></a></li>
+                        <li><a href="organization.html">Organization</a></li>
+                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="company-customer.html">Customers</a></li>
+                                <li><a href="company-account.html">Account</a></li>
+                                <li><a href="company-booking.html">Booking option</a></li>
+                                <li><a href="company-pickup.html">Company pickup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Users 1</a></li>
+                                <li><a href="#">Users 2</a></li>
+                                <li><a href="#">Users 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mainfest.html">Mainfest</a></li>
+                                <li><a href="postal-code.html">Postal codes</a></li>
+                                <li><a href="description.html">Description</a></li>
+                                <li><a href="create-description.html">Create description</a></li>
+                                <li><a href="pickup.html">Pickup</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Products 1</a></li>
+                                <li><a href="#">Products 2</a></li>
+                                <li><a href="#">Products 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Matrix <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Matrix 1</a></li>
+                                <li><a href="#">Matrix 2</a></li>
+                                <li><a href="#">Matrix 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fee <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Fee 1</a></li>
+                                <li><a href="#">Fee 2</a></li>
+                                <li><a href="#">Fee 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="create-invoice.html">Create invoice</a></li>
+                                <li><a href="#">Invoice Control 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Address Book <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="address-book.html">Address Book</a></li>
+                                <li><a href="address-book-record.html">Address Book Record</a></li>
+                                <li><a href="#">Address Book 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Create Shipment <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Create Shipment</a></li>
+                                <li><a href="#">Create Shipment 2</a></li>
+                                <li><a href="#">Create Shipment 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="history.html">History</a></li>
+                        <!-- <li><a href="#">Change Company</a></li> -->
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- Nav ends -->
+    </div>
+    <div class="fix-top"></div>
+    <!-- Main container starts -->
+    <div class="container-fluid main-container">
+        <div class="row ">
+            <div class="col-lg-12 main-header">
+                <h1>Create booking options</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Filter starts -->
+                <form class="form-horizontal try-form">
+                    <div class="row  both-col-div border-div">
+                        <h2>Customer</h2>
+                        <div class="col-lg-12">
+
+                        <div class="form-group">
+                                <label for="inputSearchText" class="col-lg-2">Booking options for:</label>
+
+            
+              <label for="radioOrganization" class="col-lg-2">
+<label class="single-input"> <span class="iradio_square-green">
+              <input type="radio" value="NoCustoms" name="No Customs" id="radioOrganization" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </label>
+               Organization</label>
+              
+                
+              <label for="radioCompany" class="col-lg-2">
+              <label class="single-input"> <span class="iradio_square-green">
+              <input type="radio" value="NoCustoms" name="No Customs" id="radioCompany" class="i-checks" checked="" >
+              <ins class="iCheck-helper" ></ins> </span> </label>
+              Company</label>
+                            <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Company 1</option>
+                                        <option selected>Company 2</option>
+                                        <option>Company 3</option>
+                                        <option>Company 4</option>
+                                        <option>Company 5</option>
+                                    </select>
+                                </div>    
+                                <label for="inputSearchText" class="col-lg-2">Account</label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Acount 1</option>
+                                        <option selected>Acount 2</option>
+                                        <option>Acount 3</option>
+                                        <option>Acount 4</option>
+                                        <option>Acount 5</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+
+                            <div class="form-group">
+                            <span for="checkPackageDimensions" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="package dimensions" name="package dimensions" id="checkPackageDimensions" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Package dimensions</span>
+
+              <span for="checkDryIce" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Dry ice" name="Dry ice" id="checkDryIce" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Dry ice</span>
+
+              <span for="checkCollectShipments" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Collect shipments" name="Collect shipments" id="checkCollectShipments" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Collect shipments</span>
+
+              <span for="checkImport" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Import" name="Import" id="checkImport" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Import</span>
+
+              <span for="checkSaveAddress" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Save address" name="Save address" id="checkSaveAddress" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Save address</span>
+
+              <span for="checkCOD" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="C.O.D." name="C.O.D." id="checkCOD" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              C.O.D.</span>
+
+                            </div>
+
+                            <div class="form-group">
+                            <span for="checkIncoterms" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Incoterms" name="Incoterms" id="checkIncoterms" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Incoterms</span>
+
+              <span for="checkChargeRAS" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Charge RAS" name="Charge RAS" id="checkChargeRAS" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Charge RAS</span>
+
+              <span for="checkShowPrice" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Show price" name="Show price" id="checkShowPrice" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Show price</span>
+
+              <span for="checkExportReason" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Export reason" name="Export reason" id="checkExportReason" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Export reason</span>
+
+              <span for="checkInsurance" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Insurance" name="Insurance" id="checkInsurance" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Insurance</span>
+
+              <span for="checkDangerousGoods" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Dangerous goods" name="Dangerous goods" id="checkDangerousGoods" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Dangerous goods</span>
+
+                            </div>
+
+                            <div class="form-group">
+                            <span for="checkTransportProduct" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Transport product" name="Transport product" id="checkTransportProduct" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Transport product</span>
+
+              <span for="checkPackagingType" class="col-lg-2">
+              <span class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Packaging type" name="Packaging type" id="checkPackagingType" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </span>
+              Packaging type</span>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+            <div class="row  both-col-div border-div">
+                        <h2>Booking opions required fields</h2>
+                        <div class="col-lg-12">
+
+                            <div class="form-group">
+            <label for="checkReceiversReference" class="col-lg-2">
+              <label class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Receivers reference" name="Receivers reference" id="checkReceiversReference" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </label>
+              Receivers reference</label>
+
+            <label for="checkSendersReference" class="col-lg-2">
+              <label class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Senders reference" name="Senders reference" id="checkSendersReference" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </label>
+              Senders reference</label>
+
+            <label for="checkContactPerson" class="col-lg-2">
+              <label class="single-input"> <span class="icheck_square-green">
+              <input type="checkbox" value="Contact person" name="Contact person" id="checkContactPerson" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </label>
+              Contact person</label>
+                            
+                            </div>
+
+                        </div>
+            </div>
+
+
+
+                    <div class="row  both-col-div border-div">
+                        <h2>Booking options default settings</h2>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="inputReceiversRef" class="col-lg-2">Receivers reference <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputReceiversRef" placeholder="" required>
+                                </div>
+                                <label for="inputSendersRef" class="col-lg-2">Senders reference</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputSendersRef" placeholder="">
+                                </div>
+                                <label for="inputDescription" class="col-lg-2">Description</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputDescription" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-2">Customs currency <span class="fa fa-asterisk"></span></label>
+                  <div class="col-lg-2"> 
+                    <select class="form-control selectpicker" >
+                      <option>Euro 1</option>
+                      <option selected>Euro 2</option>
+                      <option>Euro 3</option>
+                      <option>Euro 4</option>
+                      <option>Euro 5</option>
+                    </select>
+                  </div>
+                  <label for="inputCustomsValue" class="col-lg-2">Customs value</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputCustomsValue" placeholder="">
+                                </div>
+                    <label class="col-lg-2">Search criteria <span class="fa fa-asterisk"></span></label>
+                  <div class="col-lg-2"> 
+                    <select class="form-control selectpicker" >
+                      <option>Crietria 1</option>
+                      <option selected>Crietria 2</option>
+                      <option>Crietria 3</option>
+                      <option>Crietria 4</option>
+                      <option>Crietria 5</option>
+                    </select>
+                  </div>
+                  
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="row history-btn">
+            <a href="" type="submit" class="btn btn-default btn-create btn-main">Create</a>
+        </div>
+    </div>
+    <!-- Footer starts -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 main-footer">
+                <footer>
+                    <div class="col-lg-offset-6 col-lg-6">
+                        <p class="text-right">Made by the WallBee.com Team</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- Go to Top starts here -->
+    <a href="#" class="go-top"><span class="fa fa-chevron-up fa-lg"></span></a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- Date picker js -->
+    <script type="text/javascript" src="js/moment-2.4.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#datetimepicker1').datetimepicker({
+            pickTime: false
+        });
+    });
+
+    $(function() {
+        $('#datetimepicker2').datetimepicker({
+            pickTime: false
+        });
+    });
+
+    $(function() {
+        $('#datetimepicker4').datetimepicker({
+            pickDate: false
+        });
+    });
+
+    $(function() {
+        $('#datetimepicker8').datetimepicker({
+            pickDate: false
+        });
+    });
+
+    $(function() {
+        $('#datetimepicker9').datetimepicker({
+            pickDate: false
+        });
+    });
+    </script>
+    <!-- Custom checkbox js -->
+    <script src="js/icheck.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
+
+
+
+    });
+    </script>
+    <!-- Go to Top -->
+    <script>
+    $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, 300);
+        })
+    });
+    </script>
+</body>
+
+</html>
