@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
-    <title>DHL | Create Organization</title>
+    <title>DHL | User Roles</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -55,7 +55,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="branch.html">Branch <span class="sr-only">(current)</span></a></li>
-                        <li class="active"><a href="organization.html">Organization</a></li>
+                        <li><a href="organization.html">Organization</a></li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="company-customer.html">Customers</a></li>
@@ -64,7 +64,7 @@
                                 <li><a href="company-pickup.html">Company pickup</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="fa fa-angle-down"></span></a>
+                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="users.html">Users</a></li>
                                 <li><a href="user-roles.html">User roles</a></li>
@@ -135,7 +135,7 @@
     <div class="container-fluid main-container">
         <div class="row ">
             <div class="col-lg-12 main-header">
-                <h1>Create organization</h1>
+                <h1>User roles</h1>
             </div>
         </div>
         <div class="row">
@@ -143,87 +143,40 @@
                 <!-- Filter starts -->
                 <form class="form-horizontal try-form">
                     <div class="row  both-col-div border-div">
-                        <h2>Organization</h2>
+                        <h2>User roles</h2>
                         <div class="col-lg-12">
                             <div class="form-group">
-                            <label for="inputOrganizationName" class="col-lg-2">Organization name <span class="fa fa-asterisk"></span></label>
+                                <label class="col-lg-2">Company <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputOrganizationName" placeholder="" required>
-                                </div>
-                                <label for="inputBranchName" class="col-lg-2">Branch name <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputBranchName" placeholder="" required>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row  both-col-div border-div">
-                        <h2>Address</h2>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label for="inputAddressOne" class="col-lg-2">Address <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputAddressOne" placeholder="" required>
-                                </div>
-                                <label for="inputAddressTwo" class="col-lg-2">Address</label>
-                                <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputAddressTwo" placeholder="">
-                                </div>
-                                <label for="inputAddressThree" class="col-lg-2">Address</label>
-                                <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputAddressThree" placeholder="">
-                                </div>
+                                    <select class="form-control selectpicker">
+                                        <option>Company 1</option>
+                                        <option selected>Company 2</option>
+                                        <option>Company 3</option>
+                                        <option>Company 4</option>
+                                        <option>Company 5</option>
+                                    </select>
+                                </div>                                
                             </div>
 
                             <div class="form-group">
-                                <label class="col-lg-2">Country <span class="fa fa-asterisk"></span></label>
-                  <div class="col-lg-2"> 
-                    <select class="form-control selectpicker" >
-                      <option>Country 1</option>
-                      <option selected>Country 2</option>
-                      <option>Country 3</option>
-                      <option>Country 4</option>
-                      <option>Country 5</option>
-                    </select>
-                  </div>
-                  <label for="inputCity" class="col-lg-2">City <span class="fa fa-asterisk"></span></label>
-                  <div class="col-lg-2">
-                    <input type="text" class="form-control" id="inputCity" placeholder="City" required>
-                  </div>
-                  <label for="inputPostalCode" class="col-lg-2">Postal Code</label>
-                  <div class="col-lg-2">
-                    <input type="text" class="form-control" id="inputPostalCode" placeholder="Postal Code">
-                  </div>
+                                <label class="col-lg-2">Full user name <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>user name 1</option>
+                                        <option selected>user name 2</option>
+                                        <option>user name 3</option>
+                                        <option>user name 4</option>
+                                        <option>user name 5</option>
+                                    </select>
+                                </div>
                             </div>
-
-
-                            <div class="form-group">
-                                <label for="inputPhone" class="col-lg-2">Phone</label>
-                  <div class="col-lg-2">
-                    <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
-                  </div>
-                  <label for="inputEmailOne" class="col-lg-2">Email <span class="fa fa-asterisk"></span></label>
-                  <div class="col-lg-2">
-                    <input type="text" class="form-control" id="inputEmailOne" placeholder="Email" required>
-                  </div>
-                  <label for="inputEmailTwo" class="col-lg-2">Email</label>
-                  <div class="col-lg-2">
-                    <input type="text" class="form-control" id="inputEmailTwo" placeholder="Email">
-                  </div>
-                            </div>
-
-
-
-                        </div>
                     </div>
                 </form>
             </div>
-
-        </div>
+            
+      
         <div class="row history-btn">
-            <a href="" type="submit" class="btn btn-default btn-create btn-main">Create</a>
+            <a href="#" type="submit" class="btn btn-default btn-create btn-main">Save</a>
         </div>
     </div>
     <!-- Footer starts -->

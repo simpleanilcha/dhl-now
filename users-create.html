@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
-    <title>DHL | Create Organization</title>
+    <title>DHL | Create User</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -55,7 +55,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="branch.html">Branch <span class="sr-only">(current)</span></a></li>
-                        <li class="active"><a href="organization.html">Organization</a></li>
+                        <li><a href="organization.html">Organization</a></li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="company-customer.html">Customers</a></li>
@@ -64,7 +64,7 @@
                                 <li><a href="company-pickup.html">Company pickup</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="fa fa-angle-down"></span></a>
+                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="users.html">Users</a></li>
                                 <li><a href="user-roles.html">User roles</a></li>
@@ -135,7 +135,7 @@
     <div class="container-fluid main-container">
         <div class="row ">
             <div class="col-lg-12 main-header">
-                <h1>Create organization</h1>
+                <h1>Create user</h1>
             </div>
         </div>
         <div class="row">
@@ -143,22 +143,72 @@
                 <!-- Filter starts -->
                 <form class="form-horizontal try-form">
                     <div class="row  both-col-div border-div">
-                        <h2>Organization</h2>
+                        <h2>User data</h2>
                         <div class="col-lg-12">
+
+                        <div class="form-group">
+                            <label class="col-lg-2">Company <span class="fa fa-asterisk"></span></label>
+                  <div class="col-lg-2"> 
+                    <select class="form-control selectpicker" >
+                      <option>Company 1</option>
+                      <option selected>Company 2</option>
+                      <option>Company 3</option>
+                      <option>Company 4</option>
+                      <option>Company 5</option>
+                    </select>
+                  </div>
+                  <label for="inputLogin" class="col-lg-2">Login <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLogin" placeholder="" required>
+                                </div>
+                        <label for="inputFullUsername" class="col-lg-2">Full user name <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputFullUsername" placeholder="" required>
+                                </div>
+                        </div>
+
+
                             <div class="form-group">
-                            <label for="inputOrganizationName" class="col-lg-2">Organization name <span class="fa fa-asterisk"></span></label>
+                            <label for="inputPassword" class="col-lg-2">Password <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputOrganizationName" placeholder="" required>
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="" required>
+                                    <div class="info-msg"><span class="fa fa-exclamation-triangle"></span> Use more than 6 characters.</div>
                                 </div>
-                                <label for="inputBranchName" class="col-lg-2">Branch name <span class="fa fa-asterisk"></span></label>
+                            <label for="inputConfirmPassword" class="col-lg-2">Confirm password <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputBranchName" placeholder="" required>
+                                    <input type="password" class="form-control" id="inputConfirmPassword" placeholder="" required>
                                 </div>
-                                
+                            <label class="col-lg-2">Language <span class="fa fa-asterisk"></span></label>
+                  <div class="col-lg-2"> 
+                    <select class="form-control selectpicker" >
+                      <option>Language 1</option>
+                      <option selected>Language 2</option>
+                      <option>Language 3</option>
+                      <option>Language 4</option>
+                      <option>Language 5</option>
+                    </select>
+                  </div>
                             </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-2">Printer type <span class="fa fa-asterisk"></span></label>
+                                  <div class="col-lg-2"> 
+                                    <select class="form-control selectpicker" >
+                                      <option>Type 1</option>
+                                      <option selected>Type 2</option>
+                                      <option>Type 3</option>
+                                      <option>Type 4</option>
+                                      <option>Type 5</option>
+                                    </select>
+                                  </div>
+                            </div>
+
+
                         </div>
                     </div>
 
+
+<!-- Address starts -->
                     <div class="row  both-col-div border-div">
                         <h2>Address</h2>
                         <div class="col-lg-12">
