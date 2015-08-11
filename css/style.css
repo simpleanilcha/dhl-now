@@ -522,6 +522,10 @@ td .try-form{
     padding: 8px 15px;
 }
 
+/* Email template */
+.email-body{
+    font-size: 13px;
+}
 
 
 /*date and time picker starts from here*/

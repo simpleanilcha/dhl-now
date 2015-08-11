@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
-    <title>DHL | Mainfest</title>
+    <title>DHL | XML Extract Shipments</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -148,15 +148,15 @@
     <div class="container-fluid main-container">
         <div class="row ">
             <div class="col-lg-12 main-header">
-                <h1>Mainfest</h1>
+                <h1>XML extract shipments</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <form class="form-horizontal try-form">
                     <div class="row  both-col-div border-div">
-                        <h2>End of day mainfest</h2>
-                        <!-- Mainfest starts here -->
+                        <h2>XML extract shipments</h2>
+                        <!-- XML extract shipment starts here -->
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label class="col-lg-2">From <span class="fa fa-asterisk"></span></label>
@@ -173,33 +173,9 @@
                                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
                                 </div>
 
-                                <label for="inputSearchText" class="col-lg-2">Mainfest type <span class="fa fa-asterisk"></span></label>
+                                <label class="col-lg-2">Companies</label>
                                 <div class="col-lg-2">
-                                    <select class="form-control selectpicker">
-                                        <option>Mainfest 1</option>
-                                        <option selected>Mainfest 2</option>
-                                        <option>Mainfest 3</option>
-                                        <option>Mainfest 4</option>
-                                        <option>Mainfest 5</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputSearchText" class="col-lg-2">Account</label>
-                                <div class="col-lg-2">
-                                    <select class="form-control selectpicker">
-                                        <option>Account 1</option>
-                                        <option selected>Account 2</option>
-                                        <option>Account 3</option>
-                                        <option>Account 4</option>
-                                        <option>Account 5</option>
-                                    </select>
-                                </div>
-
-                                <label for="inputSearchText" class="col-lg-2">Company type</label>
-                                <div class="col-lg-2">
-                                    <select class="form-control selectpicker">
+                                    <select name="Companies" class="form-control selectpicker" multiple>
                                         <option>Company 1</option>
                                         <option selected>Company 2</option>
                                         <option>Company 3</option>
@@ -207,28 +183,68 @@
                                         <option>Company 5</option>
                                     </select>
                                 </div>
+                            </div>
 
-                                <label for="inputSearchText" class="col-lg-2">Transport product</label>
+                            <div class="form-group">
+                                <label class="col-lg-2">Shipment status</label>
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
-                                        <option>Transport 1</option>
-                                        <option selected>Transport 2</option>
-                                        <option>Transport 3</option>
-                                        <option>Transport 4</option>
-                                        <option>Transport 5</option>
+                                        <option>Status 1</option>
+                                        <option selected>Status 2</option>
+                                        <option>Status 3</option>
+                                        <option>Status 4</option>
+                                        <option>Status 5</option>
                                     </select>
                                 </div>
+
+                                <label class="col-lg-2">Insurance conditions</label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Condition 1</option>
+                                        <option selected>Condition 2</option>
+                                        <option>Condition 3</option>
+                                        <option>Condition 4</option>
+                                        <option>Condition 5</option>
+                                    </select>
+                                </div>
+
+                                <label class="col-lg-2">Deleted status</label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Status 1</option>
+                                        <option selected>Status 2</option>
+                                        <option>Status 3</option>
+                                        <option>Status 4</option>
+                                        <option>Status 5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-2">Transferred status</label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Status 1</option>
+                                        <option selected>Status 2</option>
+                                        <option>Status 3</option>
+                                        <option>Status 4</option>
+                                        <option>Status 5</option>
+                                    </select>
+                                </div>
+                                <label for="checkMarkAsTransfered" class="col-lg-2 ">Mark as transferred</label>
+                                <label class="col-lg-1 "> <span class="icheckbox_square-green">
+              <input type="checkbox" value="MarkAsTransfered" name="No Customs" id="checkMarkAsTransfered" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </label>
                             </div>                                                                                    
 
-
                         </div>
-                        <!-- Mainfest ends here -->
+                        <!-- XML extract shipment ends here -->
 
                     </div>
                 </form>
                 <!-- Create button -->
                 <div class="row history-btn">
-                    <button type="submit" class="btn btn-default btn-create btn-main">Get mainfest</button>
+                    <button type="submit" class="btn btn-default btn-create btn-main">Get XML</button>
                 </div>
             </div>
         </div>

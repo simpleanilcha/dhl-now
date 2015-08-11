@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
-    <title>DHL | Mainfest</title>
+    <title>DHL | Create Package</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Date picker -->
+    <!-- <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> -->
     <!-- Select css -->
     <link href="css/bootstrap-select.min.css" rel="stylesheet">
     <!-- custom checkbox css -->
@@ -92,7 +94,7 @@
                                 <li><a href="invoice-history.html">History</a></li>
                                 <li><a href="invoice-credit.html">Credit overview</a></li>
                             </ul>
-                        </li>                        
+                        </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="product-sale.html">Sale products</a></li>
@@ -148,56 +150,26 @@
     <div class="container-fluid main-container">
         <div class="row ">
             <div class="col-lg-12 main-header">
-                <h1>Mainfest</h1>
+                <h1>Create package</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
+                <!-- Filter starts -->
                 <form class="form-horizontal try-form">
                     <div class="row  both-col-div border-div">
-                        <h2>End of day mainfest</h2>
-                        <!-- Mainfest starts here -->
+                        <h2>Package</h2>
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label class="col-lg-2">From <span class="fa fa-asterisk"></span></label>
+                                <label for="inputPackageName" class="col-lg-2">Package name <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
-                                    <div id="datetimepicker1" class="input-group date">
-                                        <input type="text" class="form-control">
-                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
+                                    <input type="text" class="form-control" id="inputPackageName" placeholder="" required>
                                 </div>
-
-                                <label class="col-lg-2">To <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-2">
-                                    <div id="datetimepicker2" class="input-group date">
-                                        <input type="text" class="form-control">
-                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
-                                </div>
-
-                                <label for="inputSearchText" class="col-lg-2">Mainfest type <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-2">
-                                    <select class="form-control selectpicker">
-                                        <option>Mainfest 1</option>
-                                        <option selected>Mainfest 2</option>
-                                        <option>Mainfest 3</option>
-                                        <option>Mainfest 4</option>
-                                        <option>Mainfest 5</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputSearchText" class="col-lg-2">Account</label>
-                                <div class="col-lg-2">
-                                    <select class="form-control selectpicker">
-                                        <option>Account 1</option>
-                                        <option selected>Account 2</option>
-                                        <option>Account 3</option>
-                                        <option>Account 4</option>
-                                        <option>Account 5</option>
-                                    </select>
-                                </div>
-
-                                <label for="inputSearchText" class="col-lg-2">Company type</label>
+                                <label for="checkMain" class="col-lg-2 ">Main</label>
+                                <label class="col-lg-2"> <span class="icheckbox_square-green">
+              <input type="checkbox" value="Main" name="No Customs" id="checkMain" class="i-checks">
+              <ins class="iCheck-helper" ></ins> </span> </label>
+                                <label class="col-lg-2">Company <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
                                         <option>Company 1</option>
@@ -207,32 +179,46 @@
                                         <option>Company 5</option>
                                     </select>
                                 </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="inputLength" class="col-lg-2">Length <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLength" placeholder="1.00" required>
+                                </div>
+                                <label for="inputWidth" class="col-lg-2">Width <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputWidth" placeholder="1.00" required>
+                                </div>
+                                <label for="inputHeight" class="col-lg-2">Height <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputHeight" placeholder="1.00" required>
+                                </div>
+                                
+                            </div>
 
-                                <label for="inputSearchText" class="col-lg-2">Transport product</label>
+                            <div class="form-group">
+                                <label class="col-lg-2">Packaging type <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
-                                        <option>Transport 1</option>
-                                        <option selected>Transport 2</option>
-                                        <option>Transport 3</option>
-                                        <option>Transport 4</option>
-                                        <option>Transport 5</option>
+                                        <option>Type 1</option>
+                                        <option selected>Type 2</option>
+                                        <option>Type 3</option>
+                                        <option>Type 4</option>
+                                        <option>Type 5</option>
                                     </select>
                                 </div>
-                            </div>                                                                                    
-
-
+                            </div>
                         </div>
-                        <!-- Mainfest ends here -->
 
                     </div>
+
                 </form>
-                <!-- Create button -->
-                <div class="row history-btn">
-                    <button type="submit" class="btn btn-default btn-create btn-main">Get mainfest</button>
-                </div>
             </div>
         </div>
-        <!-- Right column ends here -->
+        <div class="row history-btn">
+            <a href="" type="submit" class="btn btn-default btn-create btn-main">Create</a>
+        </div>
     </div>
     <!-- Footer starts -->
     <div class="container-fluid">
