@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
+    <title>DHL | Create Invoice</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Select css -->
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <!-- custom checkbox css -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="position-fix">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-2 col-xs-6 ">
+                        <a href="index.html"> <img src="images/dhl_logo.gif" alt="DHL" title="DHL" class="img-responsive"> </a>
+                    </div>
+                    <div class="col-lg-offset-8 col-lg-2 col-sm-offset-7 col-sm-3 col-xs-6">
+                        <div class="user-login">
+                            <a href="#" class="user-name"><img src="images/user-icon.png" alt="user" title="user" width="20" height="20" class="img-circle"><span>Steva<span class="fa fa-angle-down"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+        <!-- Nav starts -->
+        <nav class="navbar navbar-default main-nav">
+            <div class="container-fluid main-nav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="branch.html">Branch <span class="sr-only">(current)</span></a></li>
+                        <li><a href="organization.html">Organization</a></li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="company-customer.html">Customers</a></li>
+                                <li><a href="company-account.html">Account</a></li>
+                                <li><a href="company-booking.html">Booking option</a></li>
+                                <li><a href="company-pickup.html">Company pickup</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="users.html">Users</a></li>
+                                <li><a href="user-roles.html">User roles</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tools-mainfest.html">Mainfest</a></li>
+                                <li><a href="tools-pickup.html">Pickup</a></li>
+                                <li><a href="tools-postal-code.html">Postal codes</a></li>
+                                <li><a href="tools-create-invoice.html">Create invoice</a></li>
+                                <li><a href="tools-xml-shipment.html">XML shipments</a></li>
+                                <li><a href="tools-csv-shipment.html">CSV shipments</a></li>
+                                <li><a href="tools-description.html">Description</a></li>
+                                <li><a href="tools-email-template.html">E-mail templates</a></li>
+                                <li><a href="tools-packaging.html">Packaging</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="invoice-transport.html">Transport invoice</a></li>
+                                <li><a href="invoice-branchcost.html">Branch cost overview</a></li>
+                                <li><a href="invoice-create.html">Create invoice</a></li>
+                                <li><a href="invoice-payment.html">Payment terms</a></li>
+                                <li><a href="invoice-history.html">History</a></li>
+                                <li><a href="invoice-credit.html">Credit overview</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-sale.html">Sale products</a></li>
+                                <li><a href="product-transport.html">Transport products</a></li>
+                                <li><a href="product-transport-info-main.html">Transport product info main</a></li>
+                                <li><a href="product-transport-info.html">Transport product info</a></li>
+                                <li><a href="product-data.html">Data connection</a></li>
+                                <li><a href="product-transit.html">Transit time</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Matrix <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="matrix-sale.html">Sale matrix</a></li>
+                                <li><a href="matrix-sale-main.html">Sale main matrix</a></li>
+                                <li><a href="matrix-cost.html">Cost matrix</a></li>
+                                <li><a href="matrix-sale-zip.html">Sale matrix zip code</a></li>
+                                <li><a href="matrix-sale-zip-main.html">Sale main matrix zip code</a></li>
+                                <li><a href="matrix-cost-zip.html">Cost matrix zip code</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fee <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="fee-sale.html">Sale fee</a></li>
+                                <li><a href="fee-sale-main.html">Sale main fee</a></li>
+                                <li><a href="fee-cost.html">Cost fee</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Address Book <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="address-book.html">Address book</a></li>
+                                <li><a href="address-book-record.html">Address book record</a></li>
+                                <li><a href="address-book-updownload.html">Upload/Download address book</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Create Shipment <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Create shipment</a></li>
+                                <li><a href="shipment-shot-file.html">Shot files</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="history.html">History</a></li>
+                        <!-- <li><a href="#">Change Company</a></li> -->
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- Nav ends -->
+    </div>
+    <div class="fix-top"></div>
+    <!-- Main container starts -->
+    <div class="container-fluid main-container">
+        <div class="row ">
+            <div class="col-lg-12 main-header">
+                <h1>Create invoice</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form class="form-horizontal try-form">
+                    <div class="row  both-col-div border-div">
+                        <h2>Address</h2>
+                        <!-- tabs  -->
+                        <div class="col-lg-12 both-col-div dhl-tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sender address</a></li>
+                                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Billing address</a></li>
+                                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Delivery address</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- Receiver Address tab -->
+                                <div role="tabpanel" class="tab-pane active" id="profile">
+                                    <!-- <form action="" class="form-horizontal"> -->
+                                    <div class="row">
+                                        <!-- Column 1 -->
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="inputCompanyName" class="col-lg-2">Company name <span class="fa fa-asterisk"></span></label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputCompanyName" placeholder="" required>
+                                                </div>
+                                                <label for="inputContactPerson" class="col-lg-2">Contact person</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputContactPerson" placeholder="">
+                                                </div>
+                                                <label for="inputVATNumber" class="col-lg-2">VAT number</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputVATNumber" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputAddressOne" class="col-lg-2">Address <span class="fa fa-asterisk"></span></label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputAddressOne" placeholder="Address line 1" required>
+                                                </div>
+                                                <label for="inputAddressTwo" class="col-lg-2">Address</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputAddressTwo" placeholder="Address line 2">
+                                                </div>
+                                                <label for="inputAddressThree" class="col-lg-2">Address</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputAddressThree" placeholder="Address line 3">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPostalCode" class="col-lg-2">Postal Code</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputPostalCode" placeholder="Postal Code">
+                                                </div>
+                                                <label for="inputCity" class="col-lg-2">City <span class="fa fa-asterisk"></span></label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputCity" placeholder="City" required>
+                                                </div>
+                                                <label class="col-lg-2">Country <span class="fa fa-asterisk"></span></label>
+                                                <div class="col-lg-2">
+                                                    <select class="form-control selectpicker">
+                                                        <option>Country 1</option>
+                                                        <option selected>Country 2</option>
+                                                        <option>Country 3</option>
+                                                        <option>Country 4</option>
+                                                        <option>Country 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2">State <span class="fa fa-asterisk"></span></label>
+                                                <div class="col-lg-2">
+                                                    <select class="form-control selectpicker">
+                                                        <option>State 1</option>
+                                                        <option selected>State 2</option>
+                                                        <option>State 3</option>
+                                                        <option>State 4</option>
+                                                    </select>
+                                                </div>
+                                                <label for="inputPhone" class="col-lg-2">Phone</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                                                </div>
+                                                <label for="inputEmailOne" class="col-lg-2">Email</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" id="inputEmailOne" placeholder="Email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Billing address tab -->
+                                <div role="tabpanel" class="tab-pane" id="messages">Billing address tab details</div>
+                                <!-- Delivery address tab -->
+                                <div role="tabpanel" class="tab-pane" id="settings">Delivery address tab details</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tabs end here -->
+            </div>
+            </form>
+        </div>
+        <!-- Another 2-->
+        <div class="row">
+            <div class="col-lg-12">
+                <form class="form-horizontal try-form">
+                    <div class="row  both-col-div border-div">
+                        <h2>Invoice details</h2>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="col-lg-2 ">Ship date <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <div id="datetimepicker1" class="input-group date">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
+                                </div>
+                                <label class="col-lg-2">Incoterms <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Incoterms 1</option>
+                                        <option selected>Incoterms 2</option>
+                                        <option>Incoterms 3</option>
+                                        <option>Incoterms 4</option>
+                                    </select>
+                                </div>
+                                <label for="inputTotalWeight" class="col-lg-2">Total weight <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputTotalWeight" placeholder="0.00" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputInvoiceNumber" class="col-lg-2">Invoice number <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputInvoiceNumber" placeholder="" required>
+                                </div>
+                                <label class="col-lg-2">Export reason <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Export reason 1</option>
+                                        <option selected>Export reason 2</option>
+                                        <option>Export reason 3</option>
+                                        <option>Export reason 4</option>
+                                    </select>
+                                </div>
+                                <label for="CheckDeclaration" class="col-lg-2">Declaration</label>
+                                <label class="col-lg-2 "> <span class="icheckbox_square-green">
+                              <input type="checkbox" value="Save second" id="CheckDeclaration" class="i-checks">
+                              <ins class="iCheck-helper" ></ins> </span> </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAWBNumber" class="col-lg-2">AWB number</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputAWBNumber" placeholder="">
+                                </div>
+                                <label class="col-lg-2">Currency <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Currency 1</option>
+                                        <option selected>Currency 2</option>
+                                        <option>Currency 3</option>
+                                        <option>Currency 4</option>
+                                    </select>
+                                </div>
+                                <label class="col-lg-2">Remarks</label>
+                                <div class="col-lg-2 ">
+                                    <textarea name="" class="form-control" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2">Transport product <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Transport product 1</option>
+                                        <option selected>Transport product 2</option>
+                                        <option>Transport product 3</option>
+                                        <option>Transport product 4</option>
+                                    </select>
+                                </div>
+                                <label class="col-lg-2">Invoice type <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <select class="form-control selectpicker">
+                                        <option>Invoice type 1</option>
+                                        <option selected>Invoice type 2</option>
+                                        <option>Invoice type 3</option>
+                                        <option>Invoice type 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Another 2 ends here -->
+        <!-- Another 3 starts here -->
+        <form class="form-horizontal try-form">
+            <div class="row  both-col-div border-div">
+                <h2>Commodity details</h2>
+                <div class="col-lg-12">
+                    <div class="form-group ">
+                        <div class="col-lg-2">
+                            <label for="inputInvoiceNumber">Harmonized code</label>
+                            <div class="">
+                                <input type="text" class="form-control" id="inputInvoiceNumber" placeholder="">
+                            </div>
+                            <!-- <div class="">
+                    <button type="submit" class="btn btn-default btn-create">Add</button>
+                    <button type="submit" class="btn btn-default btn-create">Delete</button>
+                  </div>  -->
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="inputInvoiceNumber">Commodity <span class="fa fa-asterisk"></span></label>
+                            <div class="">
+                                <input type="text" class="form-control" id="inputInvoiceNumber" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="inputInvoiceNumber">Country of origin</label>
+                            <div class="">
+                                <select class="form-control selectpicker">
+                                    <option>Country 1</option>
+                                    <option selected>Country 2</option>
+                                    <option>Country 3</option>
+                                    <option>Country 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <label for="inputInvoiceNumber">Quantity <span class="fa fa-asterisk"></span></label>
+                            <div class="">
+                                <input type="text" class="form-control" id="inputInvoiceNumber" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <label for="inputInvoiceNumber">Unit type</label>
+                            <div class="">
+                                <select class="form-control selectpicker">
+                                    <option>Unit type 1</option>
+                                    <option selected>Unit type 2</option>
+                                    <option>Unit type 3</option>
+                                    <option>Unit type 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="inputInvoiceNumber">Unit price <span class="fa fa-asterisk"></span></label>
+                            <div class="">
+                                <input type="text" class="form-control" id="inputInvoiceNumber" placeholder="0.00" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="inputInvoiceNumber">Total</label>
+                            <div class="">
+                                <input type="text" class="form-control" id="inputInvoiceNumber" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-1">
+                            <button type="submit" class="btn btn-default btn-create">Add</button>
+                        </div>
+                        <div class="col-lg-1 text-right">
+                            <button type="submit" class="btn btn-default btn-create">Delete</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSearch" class=" col-lg-offset-8 col-lg-2">Total</label>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="inputSearch" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSearch" class=" col-lg-offset-8 col-lg-2">Freight cost</label>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="inputSearch" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSearch" class=" col-lg-offset-8 col-lg-2">Insurance cost</label>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="inputSearch" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSearch" class=" col-lg-offset-8 col-lg-2">Other costs</label>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="inputSearch" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSearch" class=" col-lg-offset-8 col-lg-2">Custom</label>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="inputSearch" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSearch" class=" col-lg-offset-8 col-lg-2">Total</label>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="inputSearch" placeholder="0.00">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- Another 3 ends here -->
+        <!-- Create button -->
+        <div class="row history-btn">
+            <button type="submit" class="btn btn-default btn-create btn-main">Create invoice</button>
+        </div>
+    </div>
+    </div>
+    <!-- Right column ends here -->
+    </div>
+    <!-- Footer starts -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 main-footer">
+                <footer>
+                    <div class="col-lg-offset-6 col-lg-6">
+                        <p class="text-right">Made by the WallBee.com Team</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- Go to Top starts here -->
+    <a href="#" class="go-top"><span class="fa fa-chevron-up fa-lg"></span></a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- Date picker js -->
+    <script type="text/javascript" src="js/moment-2.4.0.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#datetimepicker1').datetimepicker({
+            pickTime: false
+        });
+    });
+
+    $(function() {
+        $('#datetimepicker2').datetimepicker({
+            pickTime: false
+        });
+    });
+
+    $(function() {
+        $('#datetimepicker4').datetimepicker({
+            pickDate: false
+        });
+    });
+
+    $(function() {
+        $('#datetimepicker8').datetimepicker({
+            pickDate: false
+        });
+    });
+
+    $(function() {
+        $('#datetimepicker9').datetimepicker({
+            pickDate: false
+        });
+    });
+    </script>
+    <!-- Custom checkbox js -->
+    <script src="js/icheck.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
+
+
+
+    });
+    </script>
+    <!-- Go to Top -->
+    <script>
+    $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, 300);
+        })
+    });
+    </script>
+</body>
+
+</html>
