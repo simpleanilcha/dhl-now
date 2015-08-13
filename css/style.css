@@ -270,7 +270,10 @@ select .dhl-option{
   /*border: none;*/
   box-shadow: 0px 0px 0px;
   border-radius: 0px;
-  border-bottom: 1px solid #ccc;
+  /*border-bottom: 1px solid #ccc;*/
+}
+input[type='file']{
+    border: none !important;
 }
 .right-col-div{
     margin-left: 0px;
