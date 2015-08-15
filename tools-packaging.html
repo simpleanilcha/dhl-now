@@ -83,16 +83,6 @@
                                 <li><a href="tools-packaging.html">Packaging</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="invoice-transport.html">Transport invoice</a></li>
-                                <li><a href="invoice-branchcost.html">Branch cost overview</a></li>
-                                <li><a href="invoice-create.html">Create invoice</a></li>
-                                <li><a href="invoice-payment.html">Payment terms</a></li>
-                                <li><a href="invoice-history.html">History</a></li>
-                                <li><a href="invoice-credit.html">Credit overview</a></li>
-                            </ul>
-                        </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="product-sale.html">Sale products</a></li>
@@ -118,6 +108,13 @@
                                 <li><a href="fee-sale.html">Sale fee</a></li>
                                 <li><a href="fee-sale-main.html">Sale main fee</a></li>
                                 <li><a href="fee-cost.html">Cost fee</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="invoice-transport.html">Transport invoice</a></li>
+                                <li><a href="invoice-create.html">Create invoice</a></li>
+                                <li><a href="invoice-payment.html">Payment terms</a></li>
                             </ul>
                         </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Address Book <span class="fa fa-angle-down"></span></a>
@@ -152,7 +149,6 @@
             </div>
         </div>
         <div class="row">
-            
             <!-- Table starts here -->
             <div class="col-lg-12">
                 <div class="row history-table">
@@ -170,18 +166,18 @@
                             </tr>
                             <tr>
                                 <td>docum</td>
-                                <td><label> <span class="icheckbox_square-green disabled">
+                                <td>
+                                    <label> <span class="icheckbox_square-green disabled">
               <input type="checkbox" value="CSVfile" id="checkCSVfile" class="i-checks" disabled="">
-              <ins class="iCheck-helper"></ins> </span> </label></td>
+              <ins class="iCheck-helper"></ins> </span> </label>
+                                </td>
                                 <td>Sveta</td>
                                 <td>1.00</td>
                                 <td>1.00</td>
                                 <td>1.00</td>
                                 <td>Document</td>
                                 <td class="filter-action-btns">
-                                
                                     <a href="tools-packaging-create.html" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
-
                                     <a href="" class="actions-btn" title="Delete" data-toggle="modal" data-target="#myModal02"><span class="fa fa-trash-o circle-icon"></span></a>
                                     <!-- Modal02 -->
                                     <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -194,9 +190,12 @@
                                                 <div class="modal-body">
                                                     <ul class="dhl-modal-list">
                                                         <label><strong>Are you sure you want to delete this Package?</strong></label>
-                                                        <li><label>Package:</label>docum</li>
-                                                        <li><label>Main:</label>No</li>
-                                                        <li><label>Compnay:</label>Sveta</li>
+                                                        <li>
+                                                            <label>Package:</label>docum</li>
+                                                        <li>
+                                                            <label>Main:</label>No</li>
+                                                        <li>
+                                                            <label>Compnay:</label>Sveta</li>
                                                     </ul>
                                                 </div>
                                                 <div class="modal-footer">
@@ -211,9 +210,11 @@
                             </tr>
                             <tr>
                                 <td>docum</td>
-                                <td><label> <span class="icheckbox_square-green checked disabled">
+                                <td>
+                                    <label> <span class="icheckbox_square-green checked disabled">
               <input type="checkbox" value="CSVfile" id="checkCSVfile" class="i-checks" disabled="">
-              <ins class="iCheck-helper"></ins> </span> </label></td>
+              <ins class="iCheck-helper"></ins> </span> </label>
+                                </td>
                                 <td>Sveta</td>
                                 <td>1.00</td>
                                 <td>1.00</td>
@@ -226,9 +227,11 @@
                             </tr>
                             <tr>
                                 <td>docum 3</td>
-                                <td><label> <span class="icheckbox_square-green checked disabled">
+                                <td>
+                                    <label> <span class="icheckbox_square-green checked disabled">
               <input type="checkbox" value="CSVfile" id="checkCSVfile" class="i-checks" disabled="">
-              <ins class="iCheck-helper"></ins> </span> </label></td>
+              <ins class="iCheck-helper"></ins> </span> </label>
+                                </td>
                                 <td>Sveta</td>
                                 <td>5.00</td>
                                 <td>5.00</td>
@@ -239,7 +242,6 @@
                                     <a href="" class="actions-btn" title="Delete"><span class="fa fa-trash-o circle-icon"></span></a>
                                 </td>
                             </tr>
-                            
                         </table>
                     </div>
                 </div>
