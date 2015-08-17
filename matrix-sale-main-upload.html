@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
-    <title>DHL | Fee Sale Main</title>
+    <title>DHL | Upload Matrix Sale Main</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Date picker -->
-    <!-- <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> -->
     <!-- Select css -->
     <link href="css/bootstrap-select.min.css" rel="stylesheet">
     <!-- custom checkbox css -->
@@ -95,7 +93,7 @@
                                 <li><a href="product-transit.html">Transit time</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Matrix <span class="fa fa-angle-down"></span></a>
+                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Matrix <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="matrix-sale.html">Sale matrix</a></li>
                                 <li><a href="matrix-sale-main.html">Sale main matrix</a></li>
@@ -105,7 +103,7 @@
                                 <li><a href="matrix-cost-zip.html">Cost matrix zip code</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fee <span class="fa fa-angle-down"></span></a>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fee <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="fee-sale.html">Sale fee</a></li>
                                 <li><a href="fee-sale-main.html">Sale main fee</a></li>
@@ -118,7 +116,7 @@
                                 <li><a href="invoice-create.html">Create invoice</a></li>
                                 <li><a href="invoice-payment.html">Payment terms</a></li>
                             </ul>
-                        </li>                        
+                        </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Address Book <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="address-book.html">Address book</a></li>
@@ -147,19 +145,19 @@
     <div class="container-fluid main-container">
         <div class="row ">
             <div class="col-lg-12 main-header">
-                <h1>Fee sale main</h1>
+                <h1>Upload matrix sale</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <!-- Filter starts -->
                 <form class="form-horizontal try-form">
+                    
                     <div class="row  both-col-div border-div">
-                        <h2>Filter</h2>
+                        <h2>Matrix sale main</h2>
+                        <!--  starts here -->
                         <div class="col-lg-12">
-                            
                             <div class="form-group">
-                                <label class="col-lg-2">Country of product</label>
+                            <label class="col-lg-2">Sale product <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
                                         <option>Product 1</option>
@@ -169,17 +167,7 @@
                                         <option>Product 5</option>
                                     </select>
                                 </div>
-                                <label class="col-lg-1">Sale product</label>
-                                <div class="col-lg-2">
-                                    <select class="form-control selectpicker">
-                                        <option>Product 1</option>
-                                        <option selected>Product 2</option>
-                                        <option>Product 3</option>
-                                        <option>Product 4</option>
-                                        <option>Product 5</option>
-                                    </select>
-                                </div>
-                                <label class="col-lg-1">Fee type</label>
+                                <label class="col-lg-2">Matrix type <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
                                         <option>Type 1</option>
@@ -189,97 +177,42 @@
                                         <option>Type 5</option>
                                     </select>
                                 </div>
-                                <div class="col-lg-1">
-                                    <button type="submit" class="btn btn-default btn-create">Filter</button>
+                                <label class="col-lg-2" for="exampleInputFile">Choose .csv file to upload: </label>
+                                <div class="col-lg-2">
+                                    <input type="file" class="form-control" id="exampleInputFile" required>
                                 </div>
+                                
+                            </div>
+
+                            <div class="form-group">
+                            <label class="col-lg-2">Valid from <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <div id="datetimepicker1" class="input-group date">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
+                                </div>
+                                <label class="col-lg-2">Valid to <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <div id="datetimepicker2" class="input-group date">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
+                                </div>
+                                <label class="col-lg-2" for="inputComment">Comment: </label>
+                                <div class="col-lg-2">
+                                    <textarea name="" class="col-lg-12" rows="1"></textarea>
+                                </div>
+                                
                             </div>
                         </div>
+
+
+                    </div>
+                    <div class="row history-btn">
+                        <button href="#" type="submit" class="btn btn-default btn-create btn-main">Upload</button>
                     </div>
                 </form>
             </div>
-            <!-- Table starts here -->
-            <div class="col-lg-12">
-                <div class="row history-table">
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <tr class="table-header tr-history-heading">
-                                <td>Sale product</td>
-                                <td>Fee type</td>
-                                <td>Valid from</td>
-                                <td>Valid to</td>
-                                <td>Main</td>
-                                <td>Rate</td>
-                                <td>Actions</td>
-                            </tr>
-                            <tr>
-                                <td>Receiver pays product</td>
-                                <td>CC</td>
-                                <td>8/13/2015</td>
-                                <td>8/28/2015</td>
-                                <td>
-                                    <label> <span class="icheckbox_square-green checked disabled">
-              <input type="checkbox" value="CSVfile" id="checkCSVfile" class="i-checks" disabled="">
-              <ins class="iCheck-helper"></ins> </span> </label>
-                                </td>
-                                <td>10.000</td>
-                                <td class="filter-action-btns">
-                                    <a href="" class="actions-btn" title="Delete" data-toggle="modal" data-target="#myModal01"><span class="fa fa-trash-o circle-icon"></span></a>
-                                    <!-- Modal01 -->
-                                    <div class="modal fade" id="myModal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <ul class="dhl-modal-list">
-                                                        <label><strong>Are you sure you want to delete this Fee sale main?</strong></label>
-                                                        <li>
-                                                            <label>Sale product:</label>Receiver pays product</li>
-                                                        <li>
-                                                            <label>Fee type:</label>CC</li>
-                                                        <li>
-                                                            <label>Valid from:</label>8/13/2015</li>
-                                                        <li>
-                                                            <label>Valid to:</label>8/28/2015</li>
-                                                        <li>
-                                                            <label>Rate:</label>10.000</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default btn-create">Continue</button>
-                                                    <button type="button" class="btn btn-default btn-create" data-dismiss="modal">Cancel</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Modal01 ends -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Receiver pays product</td>
-                                <td>CC</td>
-                                <td>8/13/2015</td>
-                                <td>8/28/2015</td>
-                                <td>
-                                    <label> <span class="icheckbox_square-green checked disabled">
-              <input type="checkbox" value="CSVfile" id="checkCSVfile" class="i-checks" disabled="">
-              <ins class="iCheck-helper"></ins> </span> </label>
-                                </td>
-                                <td>5.000</td>
-                                <td class="filter-action-btns">
-                                    <a href="" class="actions-btn" title="Delete"><span class="fa fa-trash-o circle-icon"></span></a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <!-- Table ends here -->
-        </div>
-        <div class="row history-btn">
-            <a href="fee-sale-main-create.html" type="submit" class="btn btn-default btn-create btn-main">Create New</a>
+            <!--  ends here -->
         </div>
     </div>
     <!-- Footer starts -->
