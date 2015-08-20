@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
-    <title>DHL | Upload Matrix Sale</title>
+    <title>DHL | Create Transport Product Info</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -83,7 +83,7 @@
                                 <li><a href="tools-packaging.html">Packaging</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="fa fa-angle-down"></span></a>
+                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="product-sale.html">Sale products</a></li>
                                 <li><a href="product-transport.html">Transport products</a></li>
@@ -93,7 +93,7 @@
                                 <li><a href="product-transit.html">Transit time</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Matrix <span class="fa fa-angle-down"></span></a>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Matrix <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="matrix-sale.html">Sale matrix</a></li>
                                 <li><a href="matrix-sale-main.html">Sale main matrix</a></li>
@@ -145,23 +145,23 @@
     <div class="container-fluid main-container">
         <div class="row ">
             <div class="col-lg-12 main-header">
-                <h1>Upload matrix sale</h1>
+                <h1>Create transport product info</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
+                <!-- Filter starts -->
                 <form class="form-horizontal try-form">
                     <div class="row  both-col-div border-div">
-                        <h2>Main parameters</h2>
+                        <h2>Transport product info</h2>
                         <div class="col-lg-12">
-                            <div class="form-group">
-                                <label for="inputSearchText" class="col-lg-1">Matrix for:</label>
+                        <div class="form-group">
                                 <label for="radioOrganization" class="col-lg-2">
                                     <label class="single-input"> <span class="iradio_square-green">
-              <input type="radio" value="NoCustoms" name="No Customs" id="radioOrganization" class="i-checks" >
+              <input type="radio" value="NoCustoms" name="No Customs" id="radioOrganization" class="i-checks" checked="">
               <ins class="iCheck-helper" ></ins> </span> </label>
-                                    Organization</label>
-                                <!-- <div class="col-lg-2">
+                                    Organization <span class="fa fa-asterisk"></span></label>
+                                    <div class="col-lg-2">
                                     <select class="form-control selectpicker">
                                         <option>Organization 1</option>
                                         <option selected>Organization 2</option>
@@ -169,36 +169,17 @@
                                         <option>Organization 4</option>
                                         <option>Organization 5</option>
                                     </select>
-                                </div> -->
+                                </div>
+                                
                                 <label for="radioCompany" class="col-lg-2">
                                     <label class="single-input"> <span class="iradio_square-green">
-              <input type="radio" value="NoCustoms" name="No Customs" id="radioCompany" class="i-checks" checked="">
+              <input type="radio" value="NoCustoms" name="No Customs" id="radioCompany" class="i-checks">
               <ins class="iCheck-helper" ></ins> </span> </label>
-                                    Company <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-2">
-                                    <select class="form-control selectpicker">
-                                        <option>Compnay 1</option>
-                                        <option selected>Compnay 2</option>
-                                        <option>Compnay 3</option>
-                                        <option>Compnay 4</option>
-                                        <option>Compnay 5</option>
-                                    </select>
-                                </div>
-                                <label class="col-lg-2">Account</label>
-                                <div class="col-lg-2">
-                                    <select class="form-control selectpicker">
-                                        <option>Account 1</option>
-                                        <option selected>Account 2</option>
-                                        <option>Account 3</option>
-                                        <option>Account 4</option>
-                                        <option>Account 5</option>
-                                    </select>
-                                </div>
+                                    Company</label>  
                             </div>
 
                             <div class="form-group">
-                            <label class="col-lg-1">&nbsp;</label>
-                        <label class="col-lg-2">Sale product <span class="fa fa-asterisk"></span></label>
+                            <label class="col-lg-2">Transport product <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
                                         <option>Product 1</option>
@@ -208,68 +189,105 @@
                                         <option>Product 5</option>
                                     </select>
                                 </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="row  both-col-div border-div">
-                        <h2>Matrix sale</h2>
-                        <!--  starts here -->
-                        <div class="col-lg-8">
-                            <div class="form-group">
-                                <label class="col-lg-3">Matrix type <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-3">
-                                    <select class="form-control selectpicker">
-                                        <option>Type 1</option>
-                                        <option selected>Type 2</option>
-                                        <option>Type 3</option>
-                                        <option>Type 4</option>
-                                        <option>Type 5</option>
-                                    </select>
+                                <label for="inputAccountNumber" class="col-lg-2">Account number <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputAccountNumber" placeholder="" required>
                                 </div>
-                                <label class="col-lg-3" for="exampleInputFile">Choose .csv file to upload: </label>
-                                <div class="col-lg-3">
-                                    <input type="file" class="form-control" id="exampleInputFile" required>
-                                </div>
-                                
                             </div>
 
                             <div class="form-group">
-                            <label class="col-lg-3">Valid from <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-3">
-                                    <div id="datetimepicker1" class="input-group date">
-                                        <input type="text" class="form-control">
-                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
+                                <label for="inputContactEmails" class="col-lg-2">Contact emails</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputContactEmails" placeholder="">
                                 </div>
-                                <label class="col-lg-3">Valid to <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-3">
-                                    <div id="datetimepicker2" class="input-group date">
-                                        <input type="text" class="form-control">
-                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
+                                <label for="inputSpecialHandling" class="col-lg-2">Special handling</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputSpecialHandling" placeholder="">
                                 </div>
-                            
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputLoginCredential1" class="col-lg-2">Login credential 1 <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLoginCredential1" placeholder="" required>
+                                </div>
+                                <label for="inputLoginCredential2" class="col-lg-2">Login credential 2 <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLoginCredential2" placeholder="" required>
+                                </div>
+                                <label for="inputLoginCredential3" class="col-lg-2">Login credential 3</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLoginCredential3" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputLoginCredential4" class="col-lg-2">Login credential 4</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLoginCredential4" placeholder="">
+                                </div>
+                                <label for="inputLoginCredential5" class="col-lg-2">Login credential 5</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLoginCredential5" placeholder="">
+                                </div>
+                                <label for="inputLoginCredential6" class="col-lg-2">Login credential 6</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLoginCredential6" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputLoginCredential7" class="col-lg-2">Login credential 7</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLoginCredential7" placeholder="">
+                                </div>
+                                <label for="inputLoginCredential8" class="col-lg-2">Login credential 8</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLoginCredential8" placeholder="">
+                                </div>
+                                <label for="inputLoginCredential9" class="col-lg-2">Login credential 9</label>
+                                <div class="col-lg-2">
+                                    <input type="text" class="form-control" id="inputLoginCredential9" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                            <div class="col-lg-8">
+                            <div class="form-group">
+                                <label for="inputLinkToTrack" class="col-lg-3">link to track <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" id="inputLinkToTrack" placeholder="" required>
+                                </div>
                                 
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label for="inputLinkToContact" class="col-lg-3">Link to contact <span class="fa fa-asterisk"></span></label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" id="inputLinkToContact" placeholder="" required>
+                                </div>
+                            </div>
+                            </div>
 
-                        <div class="col-lg-4">
-                        <div class="form-group">
-                        <label class="col-lg-4" for="inputComment">Comment: </label>
-                        <div class="col-lg-8">
+                            <div class="col-lg-4">
+                            <div class="form-group">
+                        <label class="col-lg-6" for="inputComment">Comment: </label>
+                        <div class="col-lg-6">
                                     <textarea name="" class="col-lg-12" rows="3"></textarea>
                                 </div>
-                        </div>
+                                </div>
                         </div>
 
+                        </div>
+
+
+                        </div> 
                     </div>
+
                     <div class="row history-btn">
-                        <button href="#" type="submit" class="btn btn-default btn-create btn-main">Upload</button>
-                    </div>
+                            <button href="#" type="submit" class="btn btn-default btn-create btn-main">Create</button>
+                        </div>
                 </form>
             </div>
-            <!--  ends here -->
         </div>
     </div>
     <!-- Footer starts -->
