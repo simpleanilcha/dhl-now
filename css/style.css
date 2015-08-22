@@ -184,13 +184,17 @@ select .dhl-option{
 }
 .btn-main{
     background-color: #c00 !important;
-    color: #fc0 !important;
+    color: #fc0 ;
     font-weight: 600;
     padding: 6px 12px !important;
 }
 .btn-main:hover{
     opacity: 0.8;
 }
+/*.btn-main:visited{
+    opacity: 0.8;
+    color: #333 ;
+}*/
 .btn-save{
     margin-top: 5px;
     font-weight: 600;
@@ -485,20 +489,23 @@ td .try-form{
 .filter-action-btns .invoice-created, .filter-action-btns .shipment-delivered {
     color: #090 !important;
 }
-.filter-action-btns .modal-dialog{
+.filter-action-btns .modal-dialog, .history-btn .modal-dialog{
     margin: 120px auto 30px;
 }
-.filter-action-btns .modal-header{
+.filter-action-btns .modal-header, .history-btn .modal-header{
     padding: 8px 15px;
     border-radius: 5px 5px 0 0;
     background-color: #c00;
     color: #fc0;
 }
-.filter-action-btns .modal-title{
+.filter-action-btns .modal-title, .history-btn .modal-title{
     font-size: 15px;
 }
-.filter-action-btns .modal-body{
+.filter-action-btns .modal-body, .history-btn .modal-body{
     font-size: 13px;
+}
+.filter-action-btns .modal-footer, .history-btn .modal-footer{
+    padding: 8px 15px;
 }
 .filter-action-btns .modal .border-div{
     border: none;
@@ -522,9 +529,7 @@ td .try-form{
 .modal-body .bootstrap-select .btn-group .dropdown-menu, .modal-body .btn-group>.btn:first-child{
     border-radius: 0px !important;
 }
-.filter-action-btns .modal-footer{
-    padding: 8px 15px;
-}
+
 
 /* Email template */
 .email-body{
