@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
-    <title>DHL | Create News</title>
+    <title>DHL | Branch Cost Overview</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -24,8 +24,6 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <!-- Ckeditor js -->
-    <script src="ckeditor/ckeditor.js"></script>
 </head>
 
 <body>
@@ -113,7 +111,7 @@
                                 <li><a href="fee-cost.html">Cost fee</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
+                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="invoice-transport.html">Transport invoice</a></li>
                                 <li><a href="invoice-branch.html">Branch cost overview</a></li> 
@@ -136,7 +134,7 @@
                                 <li><a href="shipment-shot-file.html">Shot files</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">History <span class="fa fa-angle-down"></span></a>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">History <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="history.html">History</a></li>
                                 <li><a href="news.html">News</a></li>
@@ -155,7 +153,7 @@
     <div class="container-fluid main-container">
         <div class="row ">
             <div class="col-lg-12 main-header">
-                <h1>Create news</h1>
+                <h1>Branch cost overview</h1>
             </div>
         </div>
         <div class="row">
@@ -163,83 +161,101 @@
                 <!-- Filter starts -->
                 <form class="form-horizontal try-form">
                     <div class="row  both-col-div border-div">
-                        <h2>News details</h2>
+                        <h2>Filter</h2>
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label for="inputNewsTitle" class="col-lg-2">News title <span class="fa fa-asterisk"></span></label>
+                                <label class="col-lg-1">From <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputNewsTitle" placeholder="" required>
+                                    <div id="datetimepicker1" class="input-group date">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
                                 </div>
-                                <label class="col-lg-2">Language <span class="fa fa-asterisk"></span></label>
+                                <label class="col-lg-1">To <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
-                                    <select class="form-control selectpicker">
-                                        <option>Language 1</option>
-                                        <option selected>Language 2</option>
-                                        <option>Language 3</option>
-                                        <option>Language 4</option>
-                                        <option>Language 5</option>
-                                    </select>
+                                    <div id="datetimepicker2" class="input-group date">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
                                 </div>
-                                <label class="col-lg-2">Category <span class="fa fa-asterisk"></span></label>
+                                <label class="col-lg-1">Branch</label>
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
-                                        <option>Category 1</option>
-                                        <option selected>Category 2</option>
-                                        <option>Category 3</option>
-                                        <option>Category 4</option>
-                                        <option>Category 5</option>
+                                        <option>Branch 1</option>
+                                        <option selected>Branch 2</option>
+                                        <option>Branch 3</option>
+                                        <option>Branch 4</option>
+                                        <option>Branch 5</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputStartToSho" class="col-lg-2">Start to show <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputStartToSho" placeholder="" required>
+                                <div class="col-lg-1">
+                                    <button type="submit" class="btn btn-default btn-create">Filter</button>
                                 </div>
-                                <label for="inputEndToShow" class="col-lg-2">End to show <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-2">
-                                    <input type="text" class="form-control" id="inputEndToShow" placeholder="" required>
-                                </div>
-                                <label for="CheckShowOnHomePage" class="col-lg-2">Show on home page</label>
-                                <label class="col-lg-2"> <span class="icheckbox_square-green">
-              <input type="checkbox" value="ShowOnHomePage" id="CheckShowOnHomePage" class="i-checks">
-              <ins class="iCheck-helper" ></ins> </span> </label>
                             </div>
                         </div>
-                    </div>
-                    <div class="row  both-col-div border-div">
-                        <h2>News text</h2>
-                        <!-- text editor starts -->
-                        <div class="col-lg-12">
-                                <textarea name="" id="fieldname" cols="30" rows="10">
-                                </textarea>
-                        </div>
-                    </div>
-                    <div class="row history-btn">
-                        <a href=""  class="btn btn-default btn-create btn-main"  data-toggle="modal" data-target="#myModal01">Preview</a>
-                        <!-- Modal01 -->
-                                    <div class="modal fade" id="myModal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">News title</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>News text ...</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default btn-create">Continue</button>
-                                                    <button type="button" class="btn btn-default btn-create" data-dismiss="modal">Cancel</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Modal01 ends -->
-                        <button href="" type="submit" class="btn btn-default btn-create btn-main">Create</button>
                     </div>
                 </form>
             </div>
+            <!-- Table starts here -->
+            <div class="col-lg-12">
+                <div class="row history-table">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tr class="table-header tr-history-heading">
+                                <td colspan="2"></td>
+                                <td>Branch</td>
+                                <td>Company type</td>
+                                <td>Amount</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><form>
+                                        <label>
+                                            <span class="icheckbox_square-green">
+                  <input type="checkbox" value="select" class="i-checks">
+                  <ins class="iCheck-helper"></ins> </span>
+                                        </label>
+                                    </form></td>
+                                <td>Branch1</td>
+                                <td>Company type 1</td>
+                                <td>200.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td><form>
+                                        <label>
+                                            <span class="icheckbox_square-green">
+                  <input type="checkbox" value="select" class="i-checks" checked="">
+                  <ins class="iCheck-helper"></ins> </span>
+                                        </label>
+                                    </form></td>
+                                <td>Branch2</td>
+                                <td>Company type 2</td>
+                                <td>100.00</td>
+                            </tr>
+
+                            <!-- last row -->
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <form>
+                                        <label>
+                                            <span class="icheckbox_square-green">
+                  <input type="checkbox" value="select" class="i-checks">
+                  <ins class="iCheck-helper"></ins> </span>
+                                        </label>
+                                    </form>
+                                </td>
+                                <td colspan="6">Check / Uncheck all</td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Table ends here -->
+        </div>
+        <div class="row history-btn">
+            <a href="" type="submit" class="btn btn-default btn-create btn-main">Get CSV</a>
         </div>
     </div>
     <!-- Footer starts -->
@@ -329,10 +345,6 @@
             }, 300);
         })
     });
-    </script>
-    <!-- Ckeditor js -->
-    <script type="text/javascript">
-    CKEDITOR.replace('fieldname');
     </script>
 </body>
 
