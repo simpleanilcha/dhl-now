@@ -8,16 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="shortcut icon" href="images/favicon.gif" type="image/gif" />
     <title>DHL | Edit Organization</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Select css -->
-    <link href="css/bootstrap-select.min.css" rel="stylesheet">
-    <!-- custom checkbox css -->
-    <link href="css/custom.css" rel="stylesheet">
-    <!-- Google fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet" type="text/css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -257,72 +248,10 @@
     <!-- Date picker js -->
     <script type="text/javascript" src="js/moment-2.4.0.js"></script>
     <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
-    <script type="text/javascript">
-    $(function() {
-        $('#datetimepicker1').datetimepicker({
-            pickTime: false
-        });
-    });
-
-    $(function() {
-        $('#datetimepicker2').datetimepicker({
-            pickTime: false
-        });
-    });
-
-    $(function() {
-        $('#datetimepicker4').datetimepicker({
-            pickDate: false
-        });
-    });
-
-    $(function() {
-        $('#datetimepicker8').datetimepicker({
-            pickDate: false
-        });
-    });
-
-    $(function() {
-        $('#datetimepicker9').datetimepicker({
-            pickDate: false
-        });
-    });
-    </script>
     <!-- Custom checkbox js -->
     <script src="js/icheck.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('.i-checks').iCheck({
-            checkboxClass: 'icheckbox_square-green',
-            radioClass: 'iradio_square-green',
-        });
-
-
-
-    });
-    </script>
-    <!-- Go to Top -->
-    <script>
-    $(document).ready(function() {
-        // Show or hide the sticky footer button
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 200) {
-                $('.go-top').fadeIn(200);
-            } else {
-                $('.go-top').fadeOut(200);
-            }
-        });
-
-        // Animate the scroll to top
-        $('.go-top').click(function(event) {
-            event.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: 0
-            }, 300);
-        })
-    });
-    </script>
+    <!-- Custom js -->
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
