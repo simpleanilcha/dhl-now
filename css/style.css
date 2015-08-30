@@ -1,8 +1,8 @@
-@import "bootstrap.min.css";
-@import "font-awesome.min.css";
-@import "bootstrap-select.min.css";
-@import "custom.css"; /* for checkbox and radio */
-@import "http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900"; /* Google Fonts */
+@import 'bootstrap.min.css';
+@import 'font-awesome.min.css';
+@import 'bootstrap-select.min.css';
+@import 'custom.css'; /* for checkbox and radio */
+@import url (http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900); /* Google Fonts */
 
 
 html {
