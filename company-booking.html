@@ -156,18 +156,30 @@
                             <div class="form-group">
                                 <label for="inputSearchText" class="col-lg-1">Filter by:</label>
                                 <label for="radioOrganization" class="col-lg-2">
-                                    <label class="single-input"> <span class="iradio_square-green">
-              <input type="radio" value="NoCustoms" name="No Customs" id="radioOrganization" class="i-checks">
-              <ins class="iCheck-helper" ></ins> </span> </label>
+                                    <!-- <label class="single-input"> <span class="iradio_square-green">
+              <input type="radio" value="1" name="inputradio" id="radioOrganization" class="i-checks" checked="">
+              <ins class="iCheck-helper" ></ins> </span> </label> -->
+              <input type="radio" value="1" name="inputradio" id="radioOrganization"  checked="">
                                     Organization</label>
+                                    <div class="col-lg-2 radio-orgcompany" id="radio1" >
+                                    <select class="form-control selectpicker">
+                                        <option>Organization 1</option>
+                                        <option selected>Organization 2</option>
+                                        <option>Organization 3</option>
+                                        <option>Organization 4</option>
+                                        <option>Organization 5</option>
+                                    </select>
+                                </div>
                                 <label for="radioCompany" class="col-lg-2">
-                                    <label class="single-input"> <span class="iradio_square-green">
-              <input type="radio" value="NoCustoms" name="No Customs" id="radioCompany" class="i-checks" checked="">
-              <ins class="iCheck-helper" ></ins> </span> </label>
+                                    <!-- <label class="single-input"> <span class="iradio_square-green">
+                                                  <input type="radio" value="2" name="inputradio" id="radioCompany" class="i-checks" >
+                                                  <ins class="iCheck-helper" ></ins> </span> </label> -->
+              <input type="radio" value="2" name="inputradio" id="radioOrganization"  >
                                     Company</label>
+                                <div id="radio2" class="radio-orgcompany" style="display:none;"> 
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
-                                        <option>Company 1</option>
+                       
                                         <option selected>Company 2</option>
                                         <option>Company 3</option>
                                         <option>Company 4</option>
@@ -184,6 +196,7 @@
                                         <option>Account 5</option>
                                     </select>
                                 </div>
+                                </div>   
                                 <div class="col-lg-2">
                                     <button type="submit" class="btn btn-default btn-create">Filter</button>
                                 </div>
@@ -427,6 +440,17 @@
     <script src="js/icheck.min.js"></script>
     <!-- Custom js -->
     <script src="js/custom.js"></script>
+     <script type="text/javascript">
+     $(document).ready(function(){
+
+         $("input[name$='inputradio']").click(function(){
+             var test = $(this).val();
+             $("div.radio-orgcompany").hide();
+             $("#radio" + test).show();
+         });
+
+     });
+     </script>
 </body>
 
 </html>
