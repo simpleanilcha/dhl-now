@@ -1,10 +1,11 @@
 @import 'bootstrap.min.css';
 @import 'font-awesome.min.css';
 @import 'bootstrap-select.min.css';
-@import 'custom.css'; /* for checkbox and radio */
-@import url (http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900); /* Google Fonts */
+@import 'custom.css';
 
+/* for checkbox and radio */
 
+@import url (http: //fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900); /* Google Fonts */
 html {
     position: relative;
     min-height: 100%;
@@ -21,10 +22,14 @@ header {
 
 .main-nav {
     border-bottom: 8px solid #c00;
+    background-color: #fc0;
+    padding-top: 6px;
+    /*z-index: 9999;*/
 }
 
 .nav > li > a {
-    padding: 5px 8px;
+    padding: 5px 6px;
+    margin: auto 2px;
 }
 
 .navbar-brand {
@@ -46,17 +51,13 @@ header {
     border-color: #e7e7e7;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     background-color: #c00;
     color: #fc0;
     border-radius: 4px 4px 0 0;
 }
 
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .open > a:hover {
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
     background-color: #c00;
     color: #fc0;
     border-radius: 4px 4px 0 0;
@@ -79,7 +80,7 @@ header {
 }
 
 .user-login a:hover {
-    margin: 10px 50px 0 0;
+    /*margin: 10px 50px 0 0;*/
     text-decoration: none;
     opacity: 0.8;
 }
@@ -105,6 +106,13 @@ header {
     font-size: 12px;
 }
 
+.user-login .dropdown-menu li span.fa{
+    margin-right: 5px;
+    width: 15px;
+}
+.user-login .dropdown-menu > li > a{
+    padding: 6px 10px;
+}
 
 /* Main container*/
 
@@ -131,9 +139,7 @@ header {
     color: #c00 !important;
 }
 
-.dhl-tabs .nav-tabs>li.active>a,
-.dhl-tabs .nav-tabs>li.active>a:focus,
-.dhl-tabs .nav-tabs>li.active>a:hover {
+.dhl-tabs .nav-tabs>li.active>a, .dhl-tabs .nav-tabs>li.active>a:focus, .dhl-tabs .nav-tabs>li.active>a:hover {
     background-color: #fc0 !important;
     color: #000 !important;
 }
@@ -201,8 +207,7 @@ h2 {
     font-weight: 600;
 }
 
-.btn-create:hover,
-.btn-create:focus {
+.btn-create:hover, .btn-create:focus {
     background-color: #c00;
     color: #fc0;
     border: none;
@@ -241,8 +246,7 @@ h2 {
     margin-bottom: 5px;
 }
 
-.li-checkbox span,
-.single-input {
+.li-checkbox span, .single-input {
     margin-right: 8px;
 }
 
@@ -252,9 +256,11 @@ input[type=checkbox], input[type=radio] {
     line-height: normal;
     cursor: pointer;
 }
-textarea{
-    resize:none;
+
+textarea {
+    resize: none;
 }
+
 
 /* Footer css*/
 
@@ -285,9 +291,7 @@ textarea{
     margin-bottom: 15px;
 }
 
-.border-div .form-group,
-.border-div .btn,
-.border-div .form-control {
+.border-div .form-group, .border-div .btn, .border-div .form-control {
     font-size: 12px;
 }
 
@@ -311,9 +315,7 @@ textarea{
     padding: 2px 20px;
 }
 
-.border-div input,
-.border-div select,
-.table-select {
+.border-div input, .border-div select, .table-select {
     /*border: none;*/
     box-shadow: 0px 0px 0px;
     border-radius: 0px;
@@ -340,10 +342,7 @@ input[type='file'] {
     border-bottom-color: #ddd;
 }
 
-.dhl-tabs .nav-tabs>li.active>a,
-.dhl-tabs .nav-tabs>li.active>a:focus,
-.dhl-tabs .nav-tabs>li.active>a:hover,
-.dhl-tabs .nav-tabs>li>a {
+.dhl-tabs .nav-tabs>li.active>a, .dhl-tabs .nav-tabs>li.active>a:focus, .dhl-tabs .nav-tabs>li.active>a:hover, .dhl-tabs .nav-tabs>li>a {
     background-color: #ddd;
     border: none;
     font-weight: 600;
@@ -369,12 +368,6 @@ input[type='file'] {
 
 .fix-top {
     height: 96px;
-}
-
-.main-nav {
-    z-index: 9999;
-    background-color: #fc0;
-    padding-top: 6px;
 }
 
 span.fa.fa-asterisk {
@@ -409,8 +402,7 @@ span.fa.fa-asterisk {
     font-size: 12px;
 }
 
-.error-msg .fa-exclamation-triangle,
-.info-msg .fa-exclamation-triangle {
+.error-msg .fa-exclamation-triangle, .info-msg .fa-exclamation-triangle {
     font-size: 14px;
 }
 
@@ -423,8 +415,7 @@ span.fa.fa-asterisk {
 
 /* table css */
 
-.right-col-div .table,
-.history-table .table {
+.right-col-div .table, .history-table .table {
     font-size: 12px;
     margin-bottom: 15px;
 }
@@ -454,15 +445,13 @@ label {
     font-weight: 600;
 }
 
-.try-form .dropdown-menu>li>a:focus,
-.try-form .dropdown-menu>li>a:hover {
+.try-form .dropdown-menu>li>a:focus, .try-form .dropdown-menu>li>a:hover {
     color: #262626;
     text-decoration: none;
     background-color: #fc0 !important;
 }
 
-.try-form .bootstrap-select .btn-group .dropdown-menu,
-.try-form .btn-group>.btn:first-child {
+.try-form .bootstrap-select .btn-group .dropdown-menu, .try-form .btn-group>.btn:first-child {
     border-radius: 0px !important;
 }
 
@@ -536,36 +525,30 @@ td .try-form {
     color: #c00 !important;
 }
 
-.filter-action-btns .invoice-created,
-.filter-action-btns .shipment-delivered {
+.filter-action-btns .invoice-created, .filter-action-btns .shipment-delivered {
     color: #090 !important;
 }
 
-.filter-action-btns .modal-dialog,
-.history-btn .modal-dialog {
+.filter-action-btns .modal-dialog, .history-btn .modal-dialog {
     margin: 120px auto 30px;
 }
 
-.filter-action-btns .modal-header,
-.history-btn .modal-header {
+.filter-action-btns .modal-header, .history-btn .modal-header {
     padding: 8px 15px;
     border-radius: 5px 5px 0 0;
     background-color: #c00;
     color: #fc0;
 }
 
-.filter-action-btns .modal-title,
-.history-btn .modal-title {
+.filter-action-btns .modal-title, .history-btn .modal-title {
     font-size: 15px;
 }
 
-.filter-action-btns .modal-body,
-.history-btn .modal-body {
+.filter-action-btns .modal-body, .history-btn .modal-body {
     font-size: 13px;
 }
 
-.filter-action-btns .modal-footer,
-.history-btn .modal-footer {
+.filter-action-btns .modal-footer, .history-btn .modal-footer {
     padding: 8px 15px;
 }
 
@@ -587,15 +570,13 @@ td .try-form {
     margin-bottom: 2px;
 }
 
-.modal-body .dropdown-menu>li>a:focus,
-.modal-body .dropdown-menu>li>a:hover {
+.modal-body .dropdown-menu>li>a:focus, .modal-body .dropdown-menu>li>a:hover {
     color: #262626;
     text-decoration: none;
     background-color: #fc0 !important;
 }
 
-.modal-body .bootstrap-select .btn-group .dropdown-menu,
-.modal-body .btn-group>.btn:first-child {
+.modal-body .bootstrap-select .btn-group .dropdown-menu, .modal-body .btn-group>.btn:first-child {
     border-radius: 0px !important;
 }
 
@@ -671,9 +652,7 @@ span.input-group-addon {
     margin: 0;
 }
 
-.bootstrap-datetimepicker-widget .timepicker-hour,
-.bootstrap-datetimepicker-widget .timepicker-minute,
-.bootstrap-datetimepicker-widget .timepicker-second {
+.bootstrap-datetimepicker-widget .timepicker-hour, .bootstrap-datetimepicker-widget .timepicker-minute, .bootstrap-datetimepicker-widget .timepicker-second {
     font-size: 1.2em;
     font-weight: bold;
     width: 100%;
@@ -698,29 +677,23 @@ span.input-group-addon {
     width: 100%;
 }
 
-.bootstrap-datetimepicker-widget td,
-.bootstrap-datetimepicker-widget th {
+.bootstrap-datetimepicker-widget td, .bootstrap-datetimepicker-widget th {
     border-radius: 4px;
     height: 20px;
     text-align: center;
     width: 20px;
 }
 
-.bootstrap-datetimepicker-widget td.day:hover,
-.bootstrap-datetimepicker-widget td.hour:hover,
-.bootstrap-datetimepicker-widget td.minute:hover,
-.bootstrap-datetimepicker-widget td.second:hover {
+.bootstrap-datetimepicker-widget td.day:hover, .bootstrap-datetimepicker-widget td.hour:hover, .bootstrap-datetimepicker-widget td.minute:hover, .bootstrap-datetimepicker-widget td.second:hover {
     background: none repeat scroll 0 0 #EEEEEE;
     cursor: pointer;
 }
 
-.bootstrap-datetimepicker-widget td.old,
-.bootstrap-datetimepicker-widget td.new {
+.bootstrap-datetimepicker-widget td.old, .bootstrap-datetimepicker-widget td.new {
     color: #999999;
 }
 
-.bootstrap-datetimepicker-widget td.active,
-.bootstrap-datetimepicker-widget td.active:hover {
+.bootstrap-datetimepicker-widget td.active, .bootstrap-datetimepicker-widget td.active:hover {
     /*background-color: #428BCA;
     color: #FFFFFF;*/
     background-color: #fc0;
@@ -728,8 +701,7 @@ span.input-group-addon {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
-.bootstrap-datetimepicker-widget td.disabled,
-.bootstrap-datetimepicker-widget td.disabled:hover {
+.bootstrap-datetimepicker-widget td.disabled, .bootstrap-datetimepicker-widget td.disabled:hover {
     background: none repeat scroll 0 center rgba(0, 0, 0, 0);
     color: #999999;
     cursor: not-allowed;
@@ -762,8 +734,7 @@ span.input-group-addon {
     color: #999999;
 }
 
-.bootstrap-datetimepicker-widget td span.disabled,
-.bootstrap-datetimepicker-widget td span.disabled:hover {
+.bootstrap-datetimepicker-widget td span.disabled, .bootstrap-datetimepicker-widget td span.disabled:hover {
     background: none repeat scroll 0 center rgba(0, 0, 0, 0);
     color: #999999;
     cursor: not-allowed;
@@ -773,13 +744,11 @@ span.input-group-addon {
     width: 145px;
 }
 
-.bootstrap-datetimepicker-widget th.next,
-.bootstrap-datetimepicker-widget th.prev {
+.bootstrap-datetimepicker-widget th.next, .bootstrap-datetimepicker-widget th.prev {
     font-size: 21px;
 }
 
-.bootstrap-datetimepicker-widget th.disabled,
-.bootstrap-datetimepicker-widget th.disabled:hover {
+.bootstrap-datetimepicker-widget th.disabled, .bootstrap-datetimepicker-widget th.disabled:hover {
     background: none repeat scroll 0 center rgba(0, 0, 0, 0);
     color: #999999;
     cursor: not-allowed;
