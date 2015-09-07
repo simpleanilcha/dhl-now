@@ -113,7 +113,7 @@
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="invoice-transport.html">Transport invoice</a></li>
-                                <li><a href="invoice-branch.html">Branch cost overview</a></li> 
+                                <li><a href="invoice-branch.html">Branch cost overview</a></li>
                                 <li><a href="invoice-create.html">Create invoice</a></li>
                                 <li><a href="invoice-payment.html">Payment terms</a></li>
                                 <li><a href="invoice-history.html">History</a></li>
@@ -162,13 +162,13 @@
                     <div class="row  both-col-div border-div">
                         <h2>Transport product info</h2>
                         <div class="col-lg-12">
-                        <div class="form-group">
-                                <label for="radioOrganization" class="col-lg-2">
+                            <div class="form-group">
+                                <div class="col-lg-2">
                                     <label class="single-input"> <span class="iradio_square-green">
-              <input type="radio" value="NoCustoms" name="No Customs" id="radioOrganization" class="i-checks" checked="">
+              <input type="radio" value="Organization" name="Organization" class="i-checks" checked="">
               <ins class="iCheck-helper" ></ins> </span> </label>
-                                    Organization <span class="fa fa-asterisk"></span></label>
-                                    <div class="col-lg-2">
+                                    Organization <span class="fa fa-asterisk"></span></div>
+                                <div class="col-lg-2">
                                     <select class="form-control selectpicker">
                                         <option>Organization 1</option>
                                         <option selected>Organization 2</option>
@@ -177,16 +177,14 @@
                                         <option>Organization 5</option>
                                     </select>
                                 </div>
-                                
-                                <label for="radioCompany" class="col-lg-2">
+                                <div class="col-lg-2">
                                     <label class="single-input"> <span class="iradio_square-green">
-              <input type="radio" value="NoCustoms" name="No Customs" id="radioCompany" class="i-checks">
+              <input type="radio" value="Company" name="Company" class="i-checks">
               <ins class="iCheck-helper" ></ins> </span> </label>
-                                    Company</label>  
+                                    Company</div>
                             </div>
-
                             <div class="form-group">
-                            <label class="col-lg-2">Transport product <span class="fa fa-asterisk"></span></label>
+                                <label class="col-lg-2">Transport product <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
                                         <option>Product 1</option>
@@ -201,7 +199,6 @@
                                     <input type="text" class="form-control" id="inputAccountNumber" placeholder="" required>
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label for="inputContactEmails" class="col-lg-2">Contact emails</label>
                                 <div class="col-lg-2">
@@ -212,7 +209,6 @@
                                     <input type="text" class="form-control" id="inputSpecialHandling" placeholder="">
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label for="inputLoginCredential1" class="col-lg-2">Login credential 1 <span class="fa fa-asterisk"></span></label>
                                 <div class="col-lg-2">
@@ -227,7 +223,6 @@
                                     <input type="text" class="form-control" id="inputLoginCredential3" placeholder="">
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label for="inputLoginCredential4" class="col-lg-2">Login credential 4</label>
                                 <div class="col-lg-2">
@@ -242,7 +237,6 @@
                                     <input type="text" class="form-control" id="inputLoginCredential6" placeholder="">
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label for="inputLoginCredential7" class="col-lg-2">Login credential 7</label>
                                 <div class="col-lg-2">
@@ -257,42 +251,35 @@
                                     <input type="text" class="form-control" id="inputLoginCredential9" placeholder="">
                                 </div>
                             </div>
-
                             <div class="row">
-                            <div class="col-lg-8">
-                            <div class="form-group">
-                                <label for="inputLinkToTrack" class="col-lg-3">link to track <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control" id="inputLinkToTrack" placeholder="" required>
+                                <div class="col-lg-8">
+                                    <div class="form-group">
+                                        <label for="inputLinkToTrack" class="col-lg-3">link to track <span class="fa fa-asterisk"></span></label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="inputLinkToTrack" placeholder="" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputLinkToContact" class="col-lg-3">Link to contact <span class="fa fa-asterisk"></span></label>
+                                        <div class="col-lg-9">
+                                            <input type="text" class="form-control" id="inputLinkToContact" placeholder="" required>
+                                        </div>
+                                    </div>
                                 </div>
-                                
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="col-lg-6">Comment</label>
+                                        <div class="col-lg-6">
+                                            <textarea name="comment" class="col-lg-12" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputLinkToContact" class="col-lg-3">Link to contact <span class="fa fa-asterisk"></span></label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control" id="inputLinkToContact" placeholder="" required>
-                                </div>
-                            </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                            <div class="form-group">
-                        <label class="col-lg-6" for="inputComment">Comment: </label>
-                        <div class="col-lg-6">
-                                    <textarea name="" class="col-lg-12" rows="3"></textarea>
-                                </div>
-                                </div>
                         </div>
-
-                        </div>
-
-
-                        </div> 
                     </div>
-
                     <div class="row history-btn">
-                            <button href="#" type="submit" class="btn btn-default btn-create btn-main">Create</button>
-                        </div>
+                        <button type="submit" class="btn btn-default btn-create btn-main">Create</button>
+                    </div>
                 </form>
             </div>
         </div>

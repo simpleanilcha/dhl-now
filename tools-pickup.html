@@ -113,7 +113,7 @@
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="invoice-transport.html">Transport invoice</a></li>
-                                <li><a href="invoice-branch.html">Branch cost overview</a></li> 
+                                <li><a href="invoice-branch.html">Branch cost overview</a></li>
                                 <li><a href="invoice-create.html">Create invoice</a></li>
                                 <li><a href="invoice-payment.html">Payment terms</a></li>
                                 <li><a href="invoice-history.html">History</a></li>
@@ -175,7 +175,7 @@
                                         <input type="text" class="form-control">
                                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
                                 </div>
-                                <label for="inputSearchText" class="col-lg-2">Company type</label>
+                                <label class="col-lg-2">Company type</label>
                                 <div class="col-lg-2">
                                     <select class="form-control selectpicker">
                                         <option>Company type 1</option>
@@ -301,7 +301,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <ul class="dhl-modal-list col-lg-6">
-                                                                <label><strong>Pickup</strong></label>
+                                                                <li class="li-heading">Pickup</li>
                                                                 <li>
                                                                     <label>Company:</label>Company1</li>
                                                                 <li>
@@ -310,16 +310,15 @@
                                                                     <label>Account:</label>Account1</li>
                                                                 <li>
                                                                     <label>Status:</label>Pending</li>
-                                                                <li><label>Date:</label>08/27/2015</li>
+                                                                <li>
+                                                                    <label>Date:</label>08/27/2015</li>
                                                                 <li>
                                                                     <label>Ready time:</label>15:30</li>
                                                                 <li>
                                                                     <label>Close time:</label>17:00</li>
-                                                                
-                                                                
                                                             </ul>
                                                             <ul class="dhl-modal-list col-lg-6">
-                                                                <label><strong>Address</strong></label>
+                                                                <li class="li-heading">Address</li>
                                                                 <li>
                                                                     <label>Country:</label>Denmark
                                                                 </li>
@@ -329,26 +328,13 @@
                                                                 <li>
                                                                     <label>Reference:</label>Reference1
                                                                 </li>
-                                                                <!-- <li>
-                                                                    <label>Country:</label>Sweden</li>
-                                                                <li>
-                                                                    <label>City:</label>City 1</li>
-                                                                <li>
-                                                                    <label>Postal code:</label>11661</li>
-                                                                <li>
-                                                                    <label>Address:</label>lermantova2 str home</li>
-                                                                <li>
-                                                                    <label>Email:</label>fox@mail.ru</li>
-                                                                <li>
-                                                                    <label>Phone:</label>111111</li> -->
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-create" data-dismiss="modal">Close</button>
-       <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
-      </div>
+                                                    <button type="button" class="btn btn-default btn-create" data-dismiss="modal">Close</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -356,16 +342,16 @@
                                     <a href="" class="actions-btn" title="Modify"><span class="fa fa-pencil circle-icon"></span></a>
                                     <a href="" class="actions-btn" title="Delete" data-toggle="modal" data-target="#myModal02"><span class="fa fa-trash-o circle-icon"></span></a>
                                     <!-- Modal02 -->
-                                    <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel02">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
+                                                    <h4 class="modal-title" id="myModalLabel02">Confirmation</h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <ul class="dhl-modal-list">
-                                                        <label><strong>Are you sure you want to delete this Pickup?</strong></label>
+                                                        <li class="li-heading">Are you sure you want to delete this Pickup?</li>
                                                         <li>
                                                             <label>Status:</label>Pending</li>
                                                         <li>
@@ -412,7 +398,6 @@
                                     <a href="" class="actions-btn" title="Delete"><span class="fa fa-trash-o circle-icon"></span></a>
                                 </td>
                             </tr>
-                            
                             <tr>
                                 <td>Company3</td>
                                 <td>Main3</td>
@@ -436,9 +421,6 @@
             </div>
             <!-- Table ends here -->
         </div>
-        <!--         <div class="row history-btn">
-            <a href="address-book-record.html" type="submit" class="btn btn-default btn-create btn-main">Create New</a>
-        </div> -->
     </div>
     <!-- Footer starts -->
     <div class="container-fluid">

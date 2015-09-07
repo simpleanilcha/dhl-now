@@ -113,7 +113,7 @@
                         <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Invoice Control <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="invoice-transport.html">Transport invoice</a></li>
-                                <li><a href="invoice-branch.html">Branch cost overview</a></li> 
+                                <li><a href="invoice-branch.html">Branch cost overview</a></li>
                                 <li><a href="invoice-create.html">Create invoice</a></li>
                                 <li><a href="invoice-payment.html">Payment terms</a></li>
                                 <li><a href="invoice-history.html">History</a></li>
@@ -175,11 +175,10 @@
                                 </div>
                                 <label class="col-lg-1" for="checkDeleted">Deleted</label>
                                 <label class="col-lg-1">
-                                            <span class="icheckbox_square-green">
+                                    <span class="icheckbox_square-green">
                   <input type="checkbox" value="select" id="checkDeleted" class="i-checks">
                   <ins class="iCheck-helper"></ins> </span>
-                                        </label>
-                                
+                                </label>
                                 <div class="col-lg-1">
                                     <button type="submit" class="btn btn-default btn-create">Filter</button>
                                 </div>
@@ -208,13 +207,15 @@
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td><form>
+                                <td>
+                                    <form>
                                         <label>
                                             <span class="icheckbox_square-green">
                   <input type="checkbox" value="select" class="i-checks">
                   <ins class="iCheck-helper"></ins> </span>
                                         </label>
-                                    </form></td>
+                                    </form>
+                                </td>
                                 <td>8/15/2015</td>
                                 <td>Company1</td>
                                 <td>Product1</td>
@@ -228,16 +229,16 @@
                                     <a href="#" class="actions-btn" title="Modify"><span class="fa fa-pencil  circle-icon"></span></a>
                                     <a href="" class="actions-btn" title="Delete" data-toggle="modal" data-target="#myModal01"><span class="fa fa-trash-o circle-icon"></span></a>
                                     <!-- Modal01 -->
-                                    <div class="modal fade" id="myModal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal fade" id="myModal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel01">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
+                                                    <h4 class="modal-title" id="myModalLabel01">Confirmation</h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <ul class="dhl-modal-list">
-                                                        <label><strong>Are you sure you want to delete this Transport invoice line?</strong></label>
+                                                        <li class="li-heading">Are you sure you want to delete this Transport invoice line?</li>
                                                         <li>
                                                             <label>Price:</label>275.00</li>
                                                         <li>
@@ -256,13 +257,15 @@
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td><form>
+                                <td>
+                                    <form>
                                         <label>
                                             <span class="icheckbox_square-green">
                   <input type="checkbox" value="select" class="i-checks">
                   <ins class="iCheck-helper"></ins> </span>
                                         </label>
-                                    </form></td>
+                                    </form>
+                                </td>
                                 <td>8/25/2015</td>
                                 <td>Company2</td>
                                 <td>Product2</td>
@@ -277,7 +280,6 @@
                                     <a href="" class="actions-btn" title="Delete"><span class="fa fa-trash-o circle-icon"></span></a>
                                 </td>
                             </tr>
-                            
                             <!-- last row -->
                             <tr>
                                 <td></td>
@@ -290,9 +292,8 @@
                                         </label>
                                     </form>
                                 </td>
-                                <td colspan="6">Check / Uncheck all</td>
+                                <td colspan="10">Check / Uncheck all</td>
                             </tr>
-                            
                         </table>
                     </div>
                 </div>
@@ -300,7 +301,7 @@
             <!-- Table ends here -->
         </div>
         <div class="row history-btn">
-            <a href="invoice-transport.html" type="submit" class="btn btn-default btn-create btn-main">Back to list</a>
+            <a href="invoice-transport.html" class="btn btn-default btn-create btn-main">Back to list</a>
         </div>
     </div>
     <!-- Footer starts -->
